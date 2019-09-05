@@ -4,34 +4,83 @@
 #include "generator.h"
 #include <cstdlib>
 #include <fstream>
+#include <iostream>
+#include <sstream>
+#include <algorithm>
 #include <time.h>       /* time */
 
 
-Generator::Generator() {}
-
-void Generator::setParms(int dataCountParm, string fileNameParm) {
-    this->dataCount= dataCountParm;
-    this->fileName= fileNameParm;
-    int dataArray[this->dataCount];
-    this->data = dataArray;
+Generator::Generator() {
 }
 
-void Generator::generatorFullyRandom() {
+void Generator::generateFullyRandom(int dataSize) {
     int randomNum;
-    int data[this->dataCount];
+    int data[dataSize];
     srand (time(NULL));
-    for (int i = 0; i < this->dataCount; i++) {
-        randomNum = rand() % this->dataCount + 1;
-        this->data[i] = randomNum;
+    for (int i = 0; i < dataSize; i++) {
+        randomNum = rand() % dataSize + 1;
+        data[i] = randomNum;
     }
-    printToFile(data);
+    stringstream fileName;
+    fileName << dataSize << "-FullyRandom";
+    printToFile(data, dataSize, fileName.str());
 }
 
-void Generator::printToFile(int data[]) {
+void Generator::generateReverseSortedOrder(int dataSize) {
+    int data[dataSize];
+    for (int i = 0; i < dataSize; i++) {
+        data[i] = dataSize-i;
+    }
+    stringstream fileName;
+    fileName << dataSize << "-ReverseSortedOrder";
+    printToFile(data, dataSize, fileName.str());
+}
+
+void Generator::generatePartialRandomized(int dataSize) {
+
+}
+
+void Generator::generatePartialUnique(int dataSize) {
+    int uniqueVals = dataSize/5;
+    int randomNum;
+    int uniqueData[uniqueVals];
+    srand (time(NULL));
+    for (int i = 0; i < uniqueVals; i++) {
+        randomNum = rand() % dataSize + 1;
+        uniqueData[i] = randomNum;
+    }
+    int data[dataSize];
+    copy(uniqueData, uniqueData+uniqueVals, data);
+    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals);
+    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals+uniqueVals);
+    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals+uniqueVals+uniqueVals);
+    copy(uniqueData, uniqueData+uniqueVals+uniqueVals+uniqueVals+uniqueVals+uniqueVals, data+uniqueVals+uniqueVals+uniqueVals+uniqueVals);
+    stringstream fileName;
+    fileName << dataSize << "-PartialUniqueValues";
+    printToFile(data, dataSize, fileName.str());
+}
+
+void Generator::generateLists() {
+    int dataSize;
+    for (int i = 0; i < 4; i++) {
+        dataSize = this->dataSizes[i];
+        generateFullyRandom(dataSize);
+        generateReverseSortedOrder(dataSize);
+        generatePartialUnique(dataSize);
+    }
+}
+
+
+void Generator::printToFile(int data[], int dataSize, string fileName) {
     ofstream myFile;
-    myFile.open (this->fileName);
-    for (int i = 0; i < this->dataCount; i++) {
+    myFile.open (fileName);
+    for (int i = 0; i < dataSize; i++) {
         myFile << data[i] << " ";
     }
-    myFile.close();`
+    myFile.close();
+}
+void Generator::print(int data[], int dataSize) {
+    for (int i = 0; i < dataSize; i++) {
+        cout << data[i] << " ";
+    }
 }

@@ -13,12 +13,14 @@ using namespace std;
 
 class Generator {
 private:
-    int dataCount;
-    string fileName;
-    int* data;
+    int dataSizes[4] = {10, 1000, 10000, 100000};
+    void generateFullyRandom(int dataSize);
+    void generateReverseSortedOrder(int dataSize);
+    void generatePartialRandomized(int dataSize);
+    void generatePartialUnique(int dataSize);
+    void printToFile(int data[], int dataSize, string fileName);
+    void print(int data[], int dataSize);
 public:
     Generator();
-    void generatorFullyRandom();
-    void printToFile(int data[]);
-    void setParms(int dataCountParm, string fileNameParm);
+    void generateLists();
 };
