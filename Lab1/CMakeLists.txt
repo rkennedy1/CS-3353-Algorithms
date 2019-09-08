@@ -3,4 +3,4 @@ project(Lab1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab1 main.cpp generator.cpp generator.h)
+add_executable(Lab1 main.cpp generator.cpp generator.h Algorithm.h Sort.cpp Sort.h)

@@ -37,7 +37,19 @@ void Generator::generateReverseSortedOrder(int dataSize) {
 }
 
 void Generator::generatePartialRandomized(int dataSize) {
-
+    int data[dataSize];
+    int i, randomNum;
+    srand (time(NULL));
+    for (i = 0; i < ((dataSize/10)*7); i++) {
+        data[i] = i;
+    }
+    for (int j = i; j< dataSize; j++) {
+        randomNum = rand() % dataSize + 1;
+        data[j] = randomNum;
+    }
+    stringstream fileName;
+    fileName << dataSize << "-PartialRandomized";
+    printToFile(data, dataSize, fileName.str());
 }
 
 void Generator::generatePartialUnique(int dataSize) {
@@ -50,11 +62,13 @@ void Generator::generatePartialUnique(int dataSize) {
         uniqueData[i] = randomNum;
     }
     int data[dataSize];
-    copy(uniqueData, uniqueData+uniqueVals, data);
-    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals);
-    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals+uniqueVals);
-    copy(uniqueData, uniqueData+uniqueVals, data+uniqueVals+uniqueVals+uniqueVals);
-    copy(uniqueData, uniqueData+uniqueVals+uniqueVals+uniqueVals+uniqueVals+uniqueVals, data+uniqueVals+uniqueVals+uniqueVals+uniqueVals);
+    int counter=0;
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 0; j < uniqueVals; j++) {
+            data[counter] = uniqueData[j];
+            counter++;
+        }
+    }
     stringstream fileName;
     fileName << dataSize << "-PartialUniqueValues";
     printToFile(data, dataSize, fileName.str());
@@ -67,9 +81,9 @@ void Generator::generateLists() {
         generateFullyRandom(dataSize);
         generateReverseSortedOrder(dataSize);
         generatePartialUnique(dataSize);
+        generatePartialRandomized(dataSize);
     }
 }
-
 
 void Generator::printToFile(int data[], int dataSize, string fileName) {
     ofstream myFile;
@@ -78,9 +92,4 @@ void Generator::printToFile(int data[], int dataSize, string fileName) {
         myFile << data[i] << " ";
     }
     myFile.close();
-}
-void Generator::print(int data[], int dataSize) {
-    for (int i = 0; i < dataSize; i++) {
-        cout << data[i] << " ";
-    }
 }

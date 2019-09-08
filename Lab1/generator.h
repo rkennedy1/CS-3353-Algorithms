@@ -19,7 +19,6 @@ private:
     void generatePartialRandomized(int dataSize);
     void generatePartialUnique(int dataSize);
     void printToFile(int data[], int dataSize, string fileName);
-    void print(int data[], int dataSize);
 public:
     Generator();
     void generateLists();
