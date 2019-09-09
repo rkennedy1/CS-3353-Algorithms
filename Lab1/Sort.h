@@ -13,11 +13,13 @@ using namespace std;
 class Sort : public Algorithm {
 public:
     Sort();
-    //virtual void Execute();
-    //virtual void Display();
+    void Load(string fileName);
+    virtual void SortData(int data[], int dataSize) = 0;
     //virtual void Stats();
     //virtual void Select();
     //virtual void Save(string filePath);
+public:
+    int *data;
 };
 
 

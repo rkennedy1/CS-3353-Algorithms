@@ -22,7 +22,7 @@ void Generator::generateFullyRandom(int dataSize) {
         data[i] = randomNum;
     }
     stringstream fileName;
-    fileName << dataSize << "-FullyRandom";
+    fileName << dataSize << "-FullyRandom.csv";
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -32,7 +32,7 @@ void Generator::generateReverseSortedOrder(int dataSize) {
         data[i] = dataSize-i;
     }
     stringstream fileName;
-    fileName << dataSize << "-ReverseSortedOrder";
+    fileName << dataSize << "-ReverseSortedOrder.csv";
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -48,7 +48,7 @@ void Generator::generatePartialRandomized(int dataSize) {
         data[j] = randomNum;
     }
     stringstream fileName;
-    fileName << dataSize << "-PartialRandomized";
+    fileName << dataSize << "-PartialRandomized.csv";
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -70,7 +70,7 @@ void Generator::generatePartialUnique(int dataSize) {
         }
     }
     stringstream fileName;
-    fileName << dataSize << "-PartialUniqueValues";
+    fileName << dataSize << "-PartialUniqueValues.csv";
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -89,7 +89,11 @@ void Generator::printToFile(int data[], int dataSize, string fileName) {
     ofstream myFile;
     myFile.open (fileName);
     for (int i = 0; i < dataSize; i++) {
-        myFile << data[i] << " ";
+        if (i == dataSize - 1) {
+            myFile << data[i];
+        } else {
+            myFile << data[i] << ",";
+        }
     }
     myFile.close();
 }

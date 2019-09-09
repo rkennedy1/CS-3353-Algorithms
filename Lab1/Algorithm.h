@@ -12,13 +12,17 @@ class Algorithm {
 private:
 
 public:
+    enum SortAlgo
+        {
+            BUBBLE, MERGE, INSERTION
+        };
     virtual void Load(string fileName) = 0;
-    //virtual void Execute() = 0;
+    //virtual void Execute(int data[]) = 0;
     //virtual void Display() = 0;
     //virtual void Stats() = 0;
     //virtual void Select() = 0;
     //virtual void Save(string filePath) = 0;
-    virtual void Configure();
+    //virtual void Configure();
 };
 
 
