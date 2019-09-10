@@ -7,10 +7,11 @@
 
 
 #include "Sort.h"
+#include "SortAlgorithm.h"
 
-class Insertion: public Sort{
+class Insertion: public SortAlgorithm {
 public:
-    void SortData(int data[], int dataSize);
+    void SortData(int *data, int dataSize);
 };
 
 

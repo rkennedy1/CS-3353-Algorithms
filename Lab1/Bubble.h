@@ -7,8 +7,9 @@
 
 
 #include "Sort.h"
+#include "SortAlgorithm.h"
 
-class Bubble: public Sort {
+class Bubble: public SortAlgorithm {
 private:
     void swap(int* left, int* right);
 public:

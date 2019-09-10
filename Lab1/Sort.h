@@ -8,18 +8,27 @@
 
 #include "Algorithm.h"
 #include <string>
+#include <vector>
 
 using namespace std;
 class Sort : public Algorithm {
 public:
     Sort();
     void Load(string fileName);
-    virtual void SortData(int data[], int dataSize) = 0;
+    void Execute();
     //virtual void Stats();
-    //virtual void Select();
-    //virtual void Save(string filePath);
-public:
+    void Select(int sortAlgo);
+    virtual void Save(string filePath);
+private:
+    enum SortAlgo
+    {
+        BUBBLE, MERGE, INSERTION
+    };
     int *data;
+    int dataSize;
+    string currentFile;
+    int activeSortAlgo;
+    void LoadData(int index);
 };
 
 

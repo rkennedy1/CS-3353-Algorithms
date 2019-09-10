@@ -13,7 +13,6 @@ void Bubble::swap(int *left, int *right) {
 }
 
 void Bubble::SortData(int data[], int dataSize) {
-    //std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
     int i, j;
     for (i = 0; i < dataSize-1; i++) {
         for (j = 0; j < dataSize-i-1; j++) {
@@ -22,6 +21,4 @@ void Bubble::SortData(int data[], int dataSize) {
             }
         }
     }
-    //std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
-    //std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
 }

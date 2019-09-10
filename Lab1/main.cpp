@@ -4,14 +4,36 @@
 #include "Algorithm.h"
 #include "Merge.h"
 #include "Insertion.h"
+#include <fstream>
+
+vector<string> fileManifest;
+
+
+void LoadManifest(string manifestFile) {
+    ifstream inputFile;
+    inputFile.open(manifestFile);
+    string currentFileName;
+    while (!(inputFile.eof())) {
+        getline(inputFile, currentFileName);
+        fileManifest.push_back(currentFileName);
+    }
+}
+
 int main() {
     Algorithm *A;
-    Sort *s;
-    Merge m;
-    s = &m;
-    A = s;
-    A->Load("dataSetFileNames.txt");
+    Sort s;
+    A = &s;
+    LoadManifest("dataSetFileNames.txt");
+    for (int i = 1; i < 2; i++) {
+        for (int j = 0; j < 16; j++) {
+            A->Select(i);
+            A->Load(fileManifest[j]);
+            A->Execute();
+            A->Save(fileManifest[j]+"-Solved.txt");
+        }
+    }
     /*Generator g; //this is how I run my generator. To run the data generator comment everything else out except this line and the next line
     g.generateLists();*/
     return 0;
 }
+
