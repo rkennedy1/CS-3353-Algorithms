@@ -11,6 +11,15 @@
 #include <vector>
 #include <chrono>
 #include "SortAlgorithm.h"
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include "Bubble.h"
+#include "Insertion.h"
+#include "Merge.h"
+#include <iomanip>
+#include "SortAlgorithm.h"
 
 
 using namespace std;
@@ -19,23 +28,26 @@ public:
     Sort();
     void Load(string fileName);
     void Execute();
-    virtual void Stats();
+    void Stats();
     void Select(int sortAlgo);
-    virtual void Save(string filePath);
-    virtual void Display();
-private:
+    void Save(string filePath);
+    void Display();
+    void LoadManifest(string manifestFile);
+    vector<string> fileManifest;
+    int numFiles;
+    string activeAlgoLabel;
     enum SortAlgo
     {
-        BUBBLE, MERGE, INSERTION
+        INSERTION, BUBBLE, MERGE, LAST
     };
+private:
     int *data;
     int dataSize;
     string currentFile;
-    int activeSortAlgo;
-    string activeAlgoLabel;
+    //int activeSortAlgo;
     chrono::steady_clock::time_point start;
     chrono::steady_clock::time_point end;
-    SortAlgorithm *sortAlgo;
+    SortAlgorithm *sortAlgorithm;
 };
 
 
