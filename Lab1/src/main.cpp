@@ -25,7 +25,7 @@ int main() {
 
     /* this is how I run my generator.
      * To run the data generator comment everything else out
-     * except this the next two lines */
+     * except the next two lines */
      // Generator g;
      // g.generateLists();
 
