@@ -48,6 +48,8 @@ void Merge::MergeSort(int *data, int leftIndex, int rightIndex) {
 }
 
 void Merge::SortData(int data[], int dataSize) {
+    // I had problems with my data array not copying right when I called MergeSort()
+    // This fix worked and I don't know why
     int sortData[dataSize];
     int i;
     for ( i = 0; i < dataSize; i++) {

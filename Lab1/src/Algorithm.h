@@ -18,7 +18,7 @@ public:
     virtual void Stats() = 0;
     virtual void Select(int sortAlgo) = 0;
     virtual void Save(string filePath) = 0;
-    //virtual void Configure();
+    virtual void Configure() = 0;
 };
 
 

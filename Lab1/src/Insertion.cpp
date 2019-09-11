@@ -10,7 +10,7 @@ void Insertion::SortData(int data[], int dataSize) {
         int key = data[i];
         while (j >= 0 && data[j] > key) {
             data[j+1] = data[j];
-            j = j-1;
+            j--;
         }
         data[j+1] = key;
     }

@@ -2,13 +2,6 @@
 // Created by Ryan on 9/4/19.
 //
 #include "generator.h"
-#include <cstdlib>
-#include <fstream>
-#include <iostream>
-#include <sstream>
-#include <algorithm>
-#include <time.h>       /* time */
-
 
 Generator::Generator() {
 }
@@ -23,6 +16,7 @@ void Generator::generateFullyRandom(int dataSize) {
     }
     stringstream fileName;
     fileName << dataSize << "-FullyRandom.csv";
+    fileManifest.push_back(fileName.str());
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -33,6 +27,7 @@ void Generator::generateReverseSortedOrder(int dataSize) {
     }
     stringstream fileName;
     fileName << dataSize << "-ReverseSortedOrder.csv";
+    fileManifest.push_back(fileName.str());
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -49,6 +44,7 @@ void Generator::generatePartialRandomized(int dataSize) {
     }
     stringstream fileName;
     fileName << dataSize << "-PartialRandomized.csv";
+    fileManifest.push_back(fileName.str());
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -71,6 +67,7 @@ void Generator::generatePartialUnique(int dataSize) {
     }
     stringstream fileName;
     fileName << dataSize << "-PartialUniqueValues.csv";
+    fileManifest.push_back(fileName.str());
     printToFile(data, dataSize, fileName.str());
 }
 
@@ -83,6 +80,7 @@ void Generator::generateLists() {
         generatePartialUnique(dataSize);
         generatePartialRandomized(dataSize);
     }
+    printManifest();
 }
 
 void Generator::printToFile(int data[], int dataSize, string fileName) {
@@ -94,6 +92,15 @@ void Generator::printToFile(int data[], int dataSize, string fileName) {
         } else {
             myFile << data[i] << ",";
         }
+    }
+    myFile.close();
+}
+
+void Generator::printManifest() {
+    ofstream myFile;
+    myFile.open("fileManifest.txt");
+    for (int i = 0; i < fileManifest.size(); i++) {
+        myFile << fileManifest[i] << endl;
     }
     myFile.close();
 }

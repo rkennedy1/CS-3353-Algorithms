@@ -8,6 +8,13 @@
 #endif //LAB1_GENERATOR_H
 
 #include <string>
+#include <cstdlib>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <algorithm>
+#include <time.h>
+#include <vector>
 
 using namespace std;
 
@@ -19,7 +26,9 @@ private:
     void generatePartialRandomized(int dataSize);
     void generatePartialUnique(int dataSize);
     void printToFile(int data[], int dataSize, string fileName);
+    void printManifest();
 public:
     Generator();
     void generateLists();
+    vector<string> fileManifest;
 };

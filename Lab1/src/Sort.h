@@ -26,6 +26,7 @@ using namespace std;
 class Sort : public Algorithm {
 public:
     Sort();
+
     void Load(string fileName);
     void Execute();
     void Stats();
@@ -33,6 +34,8 @@ public:
     void Save(string filePath);
     void Display();
     void LoadManifest(string manifestFile);
+    void Configure() {}
+
     vector<string> fileManifest;
     int numFiles;
     string activeAlgoLabel;
@@ -44,10 +47,9 @@ private:
     int *data;
     int dataSize;
     string currentFile;
-    //int activeSortAlgo;
+    SortAlgorithm *sortAlgorithm;
     chrono::steady_clock::time_point start;
     chrono::steady_clock::time_point end;
-    SortAlgorithm *sortAlgorithm;
 };
 
 

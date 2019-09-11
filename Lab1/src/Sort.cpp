@@ -75,7 +75,7 @@ void Sort::Display() {
     cout << endl;
 }
 
-//used http://www.cplusplus.com/reference/chrono/high_resolution_clock/ for reference
+//used http://www.cplusplus.com/reference/chrono/high_resolution_clock/ for reference on high res timer
 void Sort::Stats() {
     double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
     time_taken *= 1e-9;

@@ -8,13 +8,15 @@
 
 #include "Sort.h"
 #include "SortAlgorithm.h"
+#include <chrono>
+#include <ctime>
+#include <algorithm>
 
 class Bubble: public SortAlgorithm {
 private:
-    void swap(int* left, int* right);
+    //void swap(int* left, int* right);
 public:
     void SortData(int data[], int dataSize);
 };
-
 
 #endif //LAB1_BUBBLE_H
