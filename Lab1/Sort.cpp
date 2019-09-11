@@ -10,12 +10,13 @@
 #include "Bubble.h"
 #include "Insertion.h"
 #include "Merge.h"
-#include <chrono>
 #include <iomanip>
 #include "SortAlgorithm.h"
 
+
+
 Sort::Sort() {
-    activeSortAlgo=2;
+    activeSortAlgo=1;
 }
 
 void Sort::Load(string inputFileName) {
@@ -24,11 +25,11 @@ void Sort::Load(string inputFileName) {
     inputFile.open(currentFile);
     size_t pos = currentFile.find("-");
     string dataSizeStr = currentFile.substr(0, pos);
-    this->dataSize = stoi(dataSizeStr);
+    dataSize = stoi(dataSizeStr);
     ifstream myFile;
     myFile.open(currentFile);
-    int tempSize = dataSize;
-    int tempData[tempSize];
+    int *tempData;
+    tempData = new int [dataSize];
     string temp;
     int i = 0;
     while(!(myFile.eof())) {
@@ -36,32 +37,30 @@ void Sort::Load(string inputFileName) {
         tempData[i] = stoi(temp);
         i++;
     }
+    data = new int[dataSize];
     data = tempData;
 }
 
 void Sort::Execute() {
-    SortAlgorithm *sortAlgo;
-    string activeAlgoLabel;
+    start = chrono::high_resolution_clock::now();
+    sortAlgo->SortData(data, dataSize);
+    end = chrono::high_resolution_clock::now();
+}
+
+void Sort::Select(int sortAlgoInput) {
+    activeSortAlgo = sortAlgoInput;
     switch (activeSortAlgo)
     {
         case 1: sortAlgo = new Insertion;
-        activeAlgoLabel = "Insertion Sort";
+            activeAlgoLabel = "Insertion Sort";
             break;
         case 2: sortAlgo = new Bubble;
-        activeAlgoLabel = "Bubble Sort";
+            activeAlgoLabel = "Bubble Sort";
+            break;
+        case 3: sortAlgo = new Merge;
+            activeAlgoLabel = "Merge Sort";
             break;
     }
-    auto start = chrono::high_resolution_clock::now();
-    sortAlgo->SortData(data, dataSize);
-    auto end = chrono::high_resolution_clock::now();
-    double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
-    time_taken *= 1e-9;
-    cout << "Time taken by " << currentFile << " using " << activeAlgoLabel << " is : " << fixed << time_taken << setprecision(9);
-    cout << " sec" << endl;
-}
-
-void Sort::Select(int sortAlgo) {
-    activeSortAlgo = sortAlgo;
 }
 
 void Sort::Save(string filePath) {
@@ -71,15 +70,21 @@ void Sort::Save(string filePath) {
         outputFile << data[i] << " ";
     }
     outputFile.close();
+    delete[] data;
 }
 
-/*
+
 void Sort::Display() {
-
+    for (int i = 0; i < dataSize; i++) {
+        cout << data[i] << " ";
+    }
+    cout << endl;
 }
 
-void Algorithm::Stats() {
 
+void Sort::Stats() {
+    double time_taken = chrono::duration_cast<chrono::nanoseconds>(end - start).count();
+    time_taken *= 1e-9;
+    cout << "Time taken by " << currentFile << " using " << activeAlgoLabel << " is : " << fixed << time_taken << setprecision(9);
+    cout << " sec" << endl;
 }
-
-*/

@@ -5,10 +5,9 @@
 #include "Insertion.h"
 
 void Insertion::SortData(int data[], int dataSize) {
-    int i, j, key;
-    for (i = 1; i < dataSize; i++) {
-        key = data[i];
-        j = i - 1;
+    for (int i = 1; i < dataSize; i++) {
+        int j = i - 1;
+        int key = data[i];
         while (j >= 0 && data[j] > key) {
             data[j+1] = data[j];
             j = j-1;

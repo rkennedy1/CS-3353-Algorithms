@@ -7,8 +7,9 @@
 
 
 #include "Sort.h"
+#include "SortAlgorithm.h"
 
-class Merge {
+class Merge: public SortAlgorithm {
 private:
     void merge(int data[], int leftIndex, int middle, int rightIndex);
     void MergeSort(int data[], int leftIndex, int rightIndex);

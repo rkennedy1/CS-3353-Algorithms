@@ -13,11 +13,10 @@ void Bubble::swap(int *left, int *right) {
 }
 
 void Bubble::SortData(int data[], int dataSize) {
-    int i, j;
-    for (i = 0; i < dataSize-1; i++) {
-        for (j = 0; j < dataSize-i-1; j++) {
+    for (int i = 0; i < dataSize-1; i++) {
+        for (int j = 0; j < dataSize-i-1; j++) {
             if (data[j] > data[j+1]) {
-                swap(&data[j], &data[j+1]);
+                swap(&data[i], &data[j+1]);
             }
         }
     }

@@ -9,6 +9,9 @@
 #include "Algorithm.h"
 #include <string>
 #include <vector>
+#include <chrono>
+#include "SortAlgorithm.h"
+
 
 using namespace std;
 class Sort : public Algorithm {
@@ -16,9 +19,10 @@ public:
     Sort();
     void Load(string fileName);
     void Execute();
-    //virtual void Stats();
+    virtual void Stats();
     void Select(int sortAlgo);
     virtual void Save(string filePath);
+    virtual void Display();
 private:
     enum SortAlgo
     {
@@ -28,7 +32,10 @@ private:
     int dataSize;
     string currentFile;
     int activeSortAlgo;
-    void LoadData(int index);
+    string activeAlgoLabel;
+    chrono::steady_clock::time_point start;
+    chrono::steady_clock::time_point end;
+    SortAlgorithm *sortAlgo;
 };
 
 
