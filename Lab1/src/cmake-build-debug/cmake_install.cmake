@@ -1,4 +1,4 @@
-# Install script for directory: /Users/RyanKennedy/Desktop/CS-3353-Algorithms/Lab1/src
+# Install script for directory: /Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/RyanKennedy/Desktop/CS-3353-Algorithms/Lab1/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

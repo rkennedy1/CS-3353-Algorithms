@@ -12,59 +12,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-FullyRandom.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialRandomized.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10-PartialUniqueValues.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-FullyRandom.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialRandomized.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/1000-PartialUniqueValues.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-FullyRandom.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialRandomized.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/10000-PartialUniqueValues.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-FullyRandom.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialRandomized.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Bubble-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Bubble-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Insertion-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Insertion-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Merge-Solved.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues-Merge-Solved.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/100000-PartialUniqueValues.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Bubble.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Insertion.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Merge.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Sort.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/generator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src.cbp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -116,55 +85,119 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1146601796">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="7" />
+          <entry key="h" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Lab1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/generator.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#115#132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Insertion.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Insertion.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Sort.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="12" selection-start-line="30" selection-end-line="31" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Sort.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="96">
+                  <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <splitter split-orientation="vertical" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/Insertion.cpp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="90">
+                      <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/main.cpp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="390">
+                      <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+                      <folding>
+                        <element signature="e#0#19#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/main.cpp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="390">
+                      <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+                      <folding>
+                        <element signature="e#0#19#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/Merge.cpp">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="15">
+                      <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -191,7 +224,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
@@ -267,11 +300,14 @@
       <workItem from="1568170221901" duration="107000" />
       <workItem from="1568170342161" duration="2648000" />
       <workItem from="1568225721646" duration="5344000" />
+      <workItem from="1568341578469" duration="104000" />
+      <workItem from="1569347789415" duration="115000" />
+      <workItem from="1569893096573" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8717000" />
+    <option name="totallyTimeSpent" value="8993000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,9 +319,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948186" visible="true" weight="0.2630458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49948186" visible="true" weight="0.27263045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50051814" side_tool="true" weight="0.2603834" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,13 +356,6 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Algorithm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bubble.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -341,16 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="e#83#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Merge.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -360,54 +379,65 @@
     <entry file="file://$PROJECT_DIR$/fileManifest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sort.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SortAlgorithm.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sort.cpp">
+    <entry file="file://$PROJECT_DIR$/Algorithm.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-676">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="210">
+          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="12" selection-start-line="30" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Insertion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        <state relative-caret-position="390">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Insertion.cpp">
+    <entry file="file://$PROJECT_DIR$/Merge.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#115#132#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
