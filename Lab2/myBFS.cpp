@@ -6,47 +6,58 @@
 
 using namespace std;
 
-myBFS::myBFS(Graph g) {
+myBFS::myBFS(vector<vector<int>> g) {
     this->g = g;
 }
 
-void myBFS::BFS(int source, int target) {
-    if (source >= g.V || target >= g.V) {
-        return;
-    }
-    vector<bool> visited(this->g.V, false);
-    queue<int> queue;
-    vector <vector<int>> parent;
+void myBFS::BFSIter(int source, int target) {
+    queue<vector<int>> queue;
+    vector<int> path;
+    vector<vector<int>> paths;
 
-    queue.push(source);
-    visited[source] = true;
+
+    path.push_back(source);
+    queue.push(path);
 
     while (!queue.empty()) {
-        int currNode = queue.front();
+        path = queue.front();
         queue.pop();
-        if (currNode == target) {
-            //its done
+
+        int last = path[path.size() - 1];
+        if (last == target) {
+            paths.push_back(path);
         }
-        for (auto i = this->g.adj[source].begin(); i != this->g.adj[source].end(); i++) {
-            if (!visited[*i]) {
-                visited[*i] = true;
-                queue.push(*i);
-                if (*i == target) {
-                    cout << "Path: ";
-                    printPath(parent[0], *i);
-                    cout << endl;
-                    return;
-                }
+        for (int i = 0; i < this->g[last].size(); i++) {
+            if (isNotVisited(this->g[last][i], path)) {
+                vector<int> newPath(path);
+                newPath.push_back(this->g[last][i]);
+                queue.push(newPath);
             }
         }
     }
+    cout << "Shortest path is: " << endl;
+    printPath(shortestPath(paths));
 }
 
-void myBFS::printPath(vector<int> parent, int i) {
-    if (parent[i] == -1) {
-        cout << i;
-        return;
+vector<int> myBFS::shortestPath(vector<vector<int>> paths) {
+    int shortestI = 0;
+    for (int i = 1; i < paths.size(); i++) {
+        if (paths[shortestI].size() > paths[i].size())
+            shortestI = i;
     }
-    printPath(parent, parent[i]);
-    cout << "->" << i;
+    return paths[shortestI];
+}
+
+int myBFS::isNotVisited(int x, vector<int> &path) {
+    for (int i = 0; i < path.size(); i++)
+        if (path[i] == x)
+            return 0;
+    return 1;
+}
+
+void myBFS::printPath(vector<int> path) {
+    for (int i = 0; i < path.size(); i++) {
+        cout << path[i] << " ";
+    }
+    cout << endl;
 }

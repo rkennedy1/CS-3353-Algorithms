@@ -15,14 +15,19 @@ using namespace std;
 
 class myBFS {
 private:
-    Graph g;
+    vector<vector<int>> g;
+
+    vector<int> shortestPath(vector<vector<int>> paths);
+
+    int isNotVisited(int x, vector<int> &path);
+
+    void printPath(vector<int> path);
 public:
-    myBFS(Graph g);
+    myBFS(vector<vector<int>> g);
 
-    void BFS(int source, int target);
+    void BFSIter(int source, int target);
 
-    void printPath(vector<int> parent, int i);
-
+    void BFSRecur(int source, int);
 };
 
 

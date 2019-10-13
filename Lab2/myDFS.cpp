@@ -7,76 +7,85 @@
 
 using namespace std;
 
-myDFS::myDFS(Graph g) {
-    this->g = g;
+myDFS::myDFS(Graph list, vector<vector<int>> graph) {
+    this->graph = graph;
 }
 
 void myDFS::DFSRecur(int source, int target) {
-    vector<bool> visited(this->g.V, false);
-    int *path = new int[this->g.V];
-    int path_index = 0;
-    DFSRecurUtil(source, target, visited, path, path_index);
+    vector<bool> visited(graph.size(), false);
+    vector<int> path(graph.size());
+    vector<vector<int>> paths;
+    int pathIndex = 0;
+    DFSRecurUtil(source, target, visited, path, pathIndex, paths);
+    printShortestPath(paths);
 }
 
-/*
-    stack<int> stack;
-    stack.push(source);
-
-    while(!stack.empty()) {
-        source = stack.top();
-        stack.pop();
-        if (!visited[source]) {
-            visited[source] = true;
-        }
-        for (auto i = this->g.adj[source].begin(); i != this->g.adj[source].end(); i++) {
-            if (!visited[*i]) {
-                stack.push(*i);
-            }
-        }
-    }*/
-
-
-void myDFS::DFSRecurUtil(int s, int t, vector<bool> visited, int *path, int path_index) {
+void
+myDFS::DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, int pathIndex, vector<vector<int>> &paths) {
     visited[s] = true;
-    path[path_index] = s;
-    path_index++;
+    path[pathIndex] = s;
+    pathIndex++;
     if (s == t) {
-        for (int i = 0; i < path_index; i++) {
-            cout << path[i] << " ";
-        }
-        cout << endl;
+        paths.push_back(path);
     } else {
-        for (auto i = this->g.adj[s].begin(); i != this->g.adj[s].end(); i++) {
-            if (!visited[*i]) {
-                DFSRecurUtil(*i, t, visited, path, path_index);
+        for (int i : graph[s]) {
+            if (!visited[i]) {
+                DFSRecurUtil(i, t, visited, path, pathIndex, paths);
             }
         }
     }
-    path_index--;
-    visited[s] = false;
 }
 
+void myDFS::DFSIter(int source, int target) {
+    stack<vector<int>> stack;
+    vector<int> path;
+    vector<vector<int>> paths;
 
-void myDFS::DFS(int source, vector<bool> visited) {
-    visited[source] = true;
-    cout << source << " ";
-    for (auto i = this->g.adj[source].begin(); i != this->g.adj[source].end(); i++) {
-        if (!visited[*i]) {
-            DFS(*i, visited);
+    path.push_back(source);
+    stack.push(path);
+
+    while (!stack.empty()) {
+        path = stack.top();
+        stack.pop();
+
+        int last = path[path.size() - 1];
+        if (last == target) {
+            paths.push_back(path);
+        }
+        for (int i = 0; i < this->graph[last].size(); i++) {
+            if (isNotVisited(this->graph[last][i], path)) {
+                vector<int> newPath(path);
+                newPath.push_back(this->graph[last][i]);
+                stack.push(newPath);
+            }
         }
     }
+    cout << "Shortest path is: " << endl;
+    printShortestPath(paths);
 }
 
-void myDFS::DFSUtil(int source) {
-    vector<bool> visited(g.V, false);
-    DFS(source, visited);
-}
-
-void myDFS::printPath(vector<int> parent, int i) {
-    if (parent[i] == -1) {
-        cout << i;
-        return;
+vector<int> myDFS::shortestPath(vector<vector<int>> paths) {
+    int shortestI = 0;
+    for (int i = 1; i < paths.size(); i++) {
+        if (paths[shortestI].size() > paths[i].size())
+            shortestI = i;
     }
-    printPath(parent, parent[i]);
-    cout << "->" << i;
+    return paths[shortestI];
+}
+
+
+int myDFS::isNotVisited(int x, vector<int> &path) {
+    for (int i = 0; i < path.size(); i++)
+        if (path[i] == x)
+            return 0;
+    return 1;
+}
+
+void myDFS::printShortestPath(vector<vector<int>> paths) {
+    vector<int> path(paths.size());
+    path = shortestPath(paths);
+    for (int i = 0; i < path.size(); i++) {
+        cout << path[i] << " ";
+    }
+    cout << endl;
 }

@@ -15,19 +15,21 @@ using namespace std;
 
 class myDFS {
 private:
-    Graph g;
+    vector<vector<int>> graph;
+
+    void DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, int pathIndex, vector<vector<int>> &paths);
+
+    vector<int> shortestPath(vector<vector<int>> paths);
+
+    int isNotVisited(int x, vector<int> &path);
+
+    void printShortestPath(vector<vector<int>> paths);
 public:
-    myDFS(Graph g);
+    myDFS(Graph list, vector<vector<int>> g);
 
-    void DFSRecur(int s, int t);
+    void DFSRecur(int source, int target);
 
-    void DFSRecurUtil(int s, int t, vector<bool> visited, int *path, int path_index);
-
-    void DFS(int source, vector<bool> visited);
-
-    void DFSUtil(int source);
-
-    void printPath(vector<int> parent, int i);
+    void DFSIter(int source, int target);
 };
 
 
