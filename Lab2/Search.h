@@ -38,9 +38,10 @@ public:
     enum SearchAlgo {
         DFSITER, DFSRECUR, BFSITER, BFSRECUR, LAST
     };
+    Graph graph;
+
 private:
     SearchAlgorithm *searchAlgorithm;
-    Graph graph;
 };
 
 

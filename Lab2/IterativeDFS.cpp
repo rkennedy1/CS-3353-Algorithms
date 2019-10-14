@@ -21,9 +21,9 @@ void IterativeDFS::DFSIter(int source, int target) {
             paths.push_back(path);
         }
         for (int i = 0; i < this->g.adjMatrix[last].size(); i++) {
-            if (isNotVisited(this->g.adjMatrix[last][i], path)) {
+            if (isNotVisited(this->g.adjMatrix[last][i].first, path)) {
                 vector<int> newPath(path);
-                newPath.push_back(this->g.adjMatrix[last][i]);
+                newPath.push_back(this->g.adjMatrix[last][i].first);
                 stack.push(newPath);
             }
         }

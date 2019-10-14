@@ -3,35 +3,35 @@
 #include "myDFS.h"
 #include "myBFS.h"
 #include "Search.h"
+#include "Dijkstra.h"
 
 using namespace std;
 
-int main() {
+int main(int argc, char *argv[]) {
     Search s;
     s.LoadManifest("fileManifest.txt");
+    /*
     for (int i = s.DFSITER; i < s.LAST; i++) {
-        for (int j = 0; j < s.numFiles - 1; j++) {
+        for(int j = 0; j < s.numFiles; j++) {
             s.Load(s.fileManifest[j]);
             s.Select(i);
             s.Execute();
         }
-    }
-    int src = 0, dst = 6;
-    cout << "BFSIter iter path from src " << src
-         << " to dst " << dst << " are \n";
-    cout << "BFS recur path from src " << src
-         << " to dst " << dst << " are \n";
-    cout << "DFS iter path from src " << src
-         << " to dst " << dst << " are \n";
-    cout << "DFS recur path from src " << src
-         << " to dst " << dst << " are \n";
+    }*/
+    s.Load(s.fileManifest[0]);
+    Dijkstra d;
+    int node = stoi(argv[1]);
+    vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node);
+    d.PrintShortestPath(dist, node);
+
     return 0;
 }
-/*    vector<vector<int>> g;
+/*
+int main() {
+
+    vector<vector<int>> g;
     g.resize(9);
 
-    // construct a graph
-    //g[0].push_back(3);
     g[0].push_back(1);
     g[0].push_back(2);
     g[1].push_back(3);
@@ -47,4 +47,14 @@ int main() {
     g[6].push_back(7);
     g[7].push_back(6);
     g[7].push_back(8);
-*/
+
+
+    Search s;
+    //s.LoadManifest("fileManifest.txt");
+    //s.Load(s.fileManifest[0]);
+    RecursiveBFS b;
+    Graph q;
+    q.loadGraphs(g);
+    b.SearchData(0, 8, q);
+
+}*/

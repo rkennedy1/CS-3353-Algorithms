@@ -11,98 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code">
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Bubble.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/CXX.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Insertion.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Merge.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/Sort.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/generator.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/.idea/Lab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/IterativeBFS.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/IterativeBFS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/IterativeDFS.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/IterativeDFS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/SearchAlgorithm.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Graph.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeBFS.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeDFS.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveBFS.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveDFS.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Search.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/myDFS.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/Lab2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/fileManifest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large100/largeGraph.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large100/largePositions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large100/largeWeights.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large16/largeGraph.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large16/largePositions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large16/largeWeights.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/largeGraph.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/largePositions.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/largeWeights.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/src.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Algorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Graph.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Graph.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Search.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Search.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/myBFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/myBFS.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/myBFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/myBFS.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/myDFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/myDFS.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/myDFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/myDFS.h" afterDir="false" />
-    </list>
+    <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +89,7 @@
       <workItem from="1569893096573" duration="57000" />
       <workItem from="1570913689623" duration="2216000" />
       <workItem from="1571011519769" duration="5225000" />
+      <workItem from="1571026682228" duration="4000" />
     </task>
     <servers />
   </component>
@@ -200,7 +110,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

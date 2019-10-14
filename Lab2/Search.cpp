@@ -11,15 +11,16 @@ Search::Search() {
 }
 
 void Search::Load(string dirPath) {
-    vector<vector<int>> adjMatrix;
+    vector<vector<pair<int, int>>> adjMatrix;
     vector<int> inputArray;
-    ifstream inputFile;
-    inputFile.open(dirPath + "/largeGraph.txt");
+    ifstream inputGraph, inputWeights;
+    inputGraph.open(dirPath + "/largeGraph.txt");
+    inputWeights.open(dirPath + "/largeWeights.txt");
     string inputLine;
-    int size;
-    while (!(inputFile.eof())) {
+    int size = 1;
+    while (!(inputGraph.eof())) {
         size++;
-        getline(inputFile, inputLine);
+        getline(inputGraph, inputLine);
         stringstream inputStream(inputLine);
         while (inputStream.good()) {
             string substring;
@@ -27,11 +28,29 @@ void Search::Load(string dirPath) {
             inputArray.push_back(stoi(substring));
         }
         adjMatrix.resize(size);
+        int inputArrSize = inputArray.size();
         for (int i = 1; i < inputArray.size(); i++) {
-            adjMatrix[inputArray[0]].push_back(inputArray[i]);
+            adjMatrix[inputArray[0]].push_back(make_pair(inputArray[i], 0));
         }
         inputArray.clear();
     }
+    while (!(inputWeights.eof())) {
+        getline(inputWeights, inputLine);
+        stringstream inputStream(inputLine);
+        while (inputStream.good()) {
+            string substring;
+            getline(inputStream, substring, ',');
+            inputArray.push_back(stoi(substring));
+        }
+        for (int i = 0; i < adjMatrix[inputArray[0]].size(); i++) {
+            if (adjMatrix[inputArray[0]][i] == make_pair(inputArray[1], 0)) {
+                adjMatrix[inputArray[0]][i] = make_pair(inputArray[1], inputArray[2]);
+                inputArray.clear();
+            }
+        }
+    }
+    inputGraph.close();
+    inputWeights.close();
     graph.loadGraphs(adjMatrix);
 }
 
@@ -68,5 +87,5 @@ void Search::LoadManifest(string manifestFile) {
 }
 
 void Search::Execute() {
-    searchAlgorithm->SearchData(2, 8, graph);
+    searchAlgorithm->SearchData(2, 12, graph);
 }

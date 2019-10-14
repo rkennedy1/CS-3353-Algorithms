@@ -8,14 +8,14 @@ Graph::Graph() {
 
 }
 
-void Graph::loadGraphs(vector<vector<int>> &inputMatrix) {
+void Graph::loadGraphs(vector<vector<pair<int, int>>> &inputMatrix) {
     adjMatrix = inputMatrix;
     list<int> *tempList;
     int temp = inputMatrix.size();
     adjList = new list<int>[temp];
     for (int i = 0; i < inputMatrix.size(); i++) {
         for (int j = 0; j < inputMatrix[i].size(); j++) {
-            addEdge(i, inputMatrix[i][j]);
+            //addEdge(i, inputMatrix[i][j]);
         }
     }
 }

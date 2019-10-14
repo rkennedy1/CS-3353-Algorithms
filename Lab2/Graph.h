@@ -16,10 +16,10 @@ public:
     Graph(Graph *pGraph);
 
     int numVertexes;
-    vector<vector<int>> adjMatrix;
+    vector<vector<pair<int, int>>> adjMatrix;
     list<int> *adjList;
 
-    void loadGraphs(vector<vector<int>> &inputMatrix);
+    void loadGraphs(vector<vector<pair<int, int>>> &inputMatrix);
 
     void addEdge(int index, int value);
 };

@@ -18,9 +18,9 @@ void RecursiveDFS::DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> 
     if (s == t) {
         paths.push_back(path);
     } else {
-        for (int i : g.adjMatrix[s]) {
-            if (!visited[i]) {
-                DFSRecurUtil(i, t, visited, path, paths);
+        for (auto i : g.adjMatrix[s]) {
+            if (!visited[i.first]) {
+                DFSRecurUtil(i.first, t, visited, path, paths);
             }
         }
     }

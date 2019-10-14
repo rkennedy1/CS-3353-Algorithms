@@ -22,7 +22,8 @@ private:
 
     void BFSRecur(int source, int target);
 
-    void BFSRecurUtil(int target, queue<int> &q, vector<bool> &visited, vector<vector<int>> &paths, vector<int> &path);
+    void BFSRecurUtil(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
+                      vector<int> &path);
 
 public:
     void SearchData(int source, int target, Graph g);

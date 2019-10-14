@@ -7,38 +7,56 @@
 void RecursiveBFS::BFSRecur(int source, int target) {
     vector<vector<int>> paths;
     vector<int> path;
-    queue<int> q;
+    queue<vector<int>> q;
     vector<bool> visited(g.adjMatrix.size(), false);
     for (int i = source; i < g.adjMatrix.size(); i++) {
         if (visited[i] == false) {
             visited[i] = true;
-            q.push(i);
+            path.push_back(source);
+            q.push(path);
             BFSRecurUtil(target, q, visited, paths, path);
         }
     }
     printShortestPath(paths);
 }
 
-void RecursiveBFS::BFSRecurUtil(int target, queue<int> &q, vector<bool> &visited, vector<vector<int>> &paths,
+void RecursiveBFS::BFSRecurUtil(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
                                 vector<int> &path) {
     if (q.empty())
         return;
-    int s = q.front();
-    path.push_back(s);
+    path = q.front();
     q.pop();
-    if (s == target) {
+    int lastNode = path[path.size() - 1];
+    if (lastNode == target) {
         paths.push_back(path);
-        path.clear();
     }
-    for (int i : this->g.adjMatrix[s]) {
-        if (!visited[i]) {
-            visited[i] = true;
-            q.push(i);
+    for (auto i : this->g.adjMatrix[lastNode]) {
+        if (!visited[i.first]) {
+            vector<int> newPath(path);
+            newPath.push_back(i.first);
+            visited[i.first] = true;
+            q.push(newPath);
         }
     }
     BFSRecurUtil(target, q, visited, paths, path);
 }
 
+/*if (q.empty())
+    return;
+int s = q.front();
+path.push_back(s);
+q.pop();
+if (s == target) {
+    paths.push_back(path);
+    path.clear();
+}
+for (int i : this->g.adjMatrix[s]) {
+    if (!visited[i]) {
+        visited[i] = true;
+        q.push(i);
+    }
+}
+BFSRecurUtil(target, q, visited, paths, path);*/
 vector<int> RecursiveBFS::shortestPath(vector<vector<int>> paths) {
     int shortestI = 0;
     for (int i = 1; i < paths.size(); i++) {

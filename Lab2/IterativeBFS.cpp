@@ -9,7 +9,6 @@ void IterativeBFS::BFSIter(int source, int target) {
     vector<int> path;
     vector<vector<int>> paths;
 
-
     path.push_back(source);
     queue.push(path);
 
@@ -17,14 +16,14 @@ void IterativeBFS::BFSIter(int source, int target) {
         path = queue.front();
         queue.pop();
 
-        int last = path[path.size() - 1];
-        if (last == target) {
+        int lastNode = path[path.size() - 1];
+        if (lastNode == target) {
             paths.push_back(path);
         }
-        for (int i = 0; i < this->g.adjMatrix[last].size(); i++) {
-            if (isNotVisited(this->g.adjMatrix[last][i], path)) {
+        for (int i = 0; i < this->g.adjMatrix[lastNode].size(); i++) {
+            if (isNotVisited(this->g.adjMatrix[lastNode][i].first, path)) {
                 vector<int> newPath(path);
-                newPath.push_back(this->g.adjMatrix[last][i]);
+                newPath.push_back(this->g.adjMatrix[lastNode][i].first);
                 queue.push(newPath);
             }
         }
