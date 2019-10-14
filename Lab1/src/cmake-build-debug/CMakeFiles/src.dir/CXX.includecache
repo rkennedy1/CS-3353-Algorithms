@@ -1,0 +1,122 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Algorithm.h
+string
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Bubble.cpp
+Bubble.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Bubble.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Bubble.h
+Sort.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+SortAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+chrono
+-
+ctime
+-
+algorithm
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Insertion.cpp
+Insertion.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Insertion.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Insertion.h
+Sort.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+SortAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Merge.cpp
+Merge.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Merge.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Merge.h
+Sort.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+SortAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.cpp
+Sort.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+Algorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Algorithm.h
+string
+-
+vector
+-
+chrono
+-
+SortAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+fstream
+-
+iostream
+-
+sstream
+-
+string
+-
+Bubble.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Bubble.h
+Insertion.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Insertion.h
+Merge.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Merge.h
+iomanip
+-
+SortAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/SortAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/generator.cpp
+generator.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/generator.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/generator.h
+string
+-
+cstdlib
+-
+fstream
+-
+iostream
+-
+sstream
+-
+algorithm
+-
+time.h
+-
+vector
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/main.cpp
+iostream
+-
+generator.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/generator.h
+Sort.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Sort.h
+Algorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Algorithm.h
+Merge.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Merge.h
+Insertion.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab1/src/Insertion.h
+fstream
+-
+

@@ -21,13 +21,14 @@ private:
 
     int isNotVisited(int x, vector<int> &path);
 
-    void printPath(vector<int> path);
+    void printShortestPath(vector<vector<int>> paths);
 public:
     myBFS(vector<vector<int>> g);
-
     void BFSIter(int source, int target);
 
-    void BFSRecur(int source, int);
+    void BFSRecur(int source, int target);
+
+    void BFSRecurUtil(int target, queue<int> &q, vector<bool> &visited, vector<vector<int>> &paths, vector<int> &path);
 };
 
 

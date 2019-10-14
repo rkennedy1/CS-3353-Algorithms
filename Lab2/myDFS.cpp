@@ -7,30 +7,28 @@
 
 using namespace std;
 
-myDFS::myDFS(Graph list, vector<vector<int>> graph) {
+myDFS::myDFS(vector<vector<int>> graph) {
     this->graph = graph;
 }
 
 void myDFS::DFSRecur(int source, int target) {
     vector<bool> visited(graph.size(), false);
-    vector<int> path(graph.size());
+    vector<int> path;
     vector<vector<int>> paths;
-    int pathIndex = 0;
-    DFSRecurUtil(source, target, visited, path, pathIndex, paths);
+    DFSRecurUtil(source, target, visited, path, paths);
     printShortestPath(paths);
 }
 
 void
-myDFS::DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, int pathIndex, vector<vector<int>> &paths) {
+myDFS::DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, vector<vector<int>> &paths) {
     visited[s] = true;
-    path[pathIndex] = s;
-    pathIndex++;
+    path.push_back(s);
     if (s == t) {
         paths.push_back(path);
     } else {
         for (int i : graph[s]) {
             if (!visited[i]) {
-                DFSRecurUtil(i, t, visited, path, pathIndex, paths);
+                DFSRecurUtil(i, t, visited, path, paths);
             }
         }
     }
@@ -60,7 +58,6 @@ void myDFS::DFSIter(int source, int target) {
             }
         }
     }
-    cout << "Shortest path is: " << endl;
     printShortestPath(paths);
 }
 

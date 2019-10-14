@@ -6,17 +6,22 @@
 #define LAB2_GRAPH_H
 
 #include <list>
+#include <vector>
 
+using namespace std;
 class Graph {
 public:
     Graph();
 
-    int V;
-    std::list<int> *adj;
+    Graph(Graph *pGraph);
 
-    Graph(int V);
+    int numVertexes;
+    vector<vector<int>> adjMatrix;
+    list<int> *adjList;
 
-    void addEdge(int v, int w);
+    void loadGraphs(vector<vector<int>> &inputMatrix);
+
+    void addEdge(int index, int value);
 };
 
 

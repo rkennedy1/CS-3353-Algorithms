@@ -7,7 +7,6 @@
 #include <fstream>
 
 int main() {
-
     Algorithm *A;
     Sort s;
     A = &s;
