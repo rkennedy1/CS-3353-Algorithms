@@ -8,8 +8,9 @@ Graph::Graph() {
 
 }
 
-void Graph::loadGraphs(vector<vector<pair<int, int>>> &inputMatrix) {
+void Graph::loadGraphs(vector<vector<pair<int, int>>> &inputMatrix, vector<tuple<int, int, int>> &positions) {
     adjMatrix = inputMatrix;
+    this->positions = positions;
     list<int> *tempList;
     int temp = inputMatrix.size();
     adjList = new list<int>[temp];

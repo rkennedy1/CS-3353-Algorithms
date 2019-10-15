@@ -18,12 +18,15 @@
 #include "RecursiveDFS.h"
 #include "IterativeBFS.h"
 #include "IterativeDFS.h"
+#include "Astar.h"
+#include "Dijkstra.h"
 
 class Search {
 public:
     Search();
     void Load(string fileName);
-    void Execute();
+
+    void Execute(int start, int end);
     void Stats();
     void Select(int sortAlgo);
     void Save(string filePath);
@@ -36,7 +39,7 @@ public:
 
     //DIJKSTRA, ASTAR,
     enum SearchAlgo {
-        DFSITER, DFSRECUR, BFSITER, BFSRECUR, LAST
+        DFSITER, DFSRECUR, BFSITER, BFSRECUR, DIJKSTRA, ASTAR, LAST
     };
     Graph graph;
 

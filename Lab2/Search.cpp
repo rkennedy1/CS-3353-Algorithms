@@ -13,10 +13,12 @@ Search::Search() {
 void Search::Load(string dirPath) {
     vector<vector<pair<int, int>>> adjMatrix;
     vector<int> inputArray;
-    ifstream inputGraph, inputWeights;
+    ifstream inputGraph, inputWeights, inputPositions;
     inputGraph.open(dirPath + "/largeGraph.txt");
     inputWeights.open(dirPath + "/largeWeights.txt");
+    inputPositions.open(dirPath + "/largePositions.txt");
     string inputLine;
+
     int size = 1;
     while (!(inputGraph.eof())) {
         size++;
@@ -49,9 +51,21 @@ void Search::Load(string dirPath) {
             }
         }
     }
+    vector<tuple<int, int, int>> positions(size);
+    while (!(inputPositions.eof())) {
+        getline(inputPositions, inputLine);
+        stringstream inputStream(inputLine);
+        while (inputStream.good()) {
+            string substring;
+            getline(inputStream, substring, ',');
+            inputArray.push_back(stoi(substring));
+        }
+        positions[inputArray[0]] = make_tuple(inputArray[1], inputArray[2], inputArray[3]);
+        inputArray.clear();
+    }
     inputGraph.close();
     inputWeights.close();
-    graph.loadGraphs(adjMatrix);
+    graph.loadGraphs(adjMatrix, positions);
 }
 
 void Search::Select(int searchAlgorithmInput) {
@@ -72,6 +86,12 @@ void Search::Select(int searchAlgorithmInput) {
             searchAlgorithm = new RecursiveBFS;
             activeSearchLabel = "Breadth First Search - Recursive";
             break;
+        case DIJKSTRA:
+            searchAlgorithm = new Dijkstra;
+            activeSearchLabel = "Dijkstra";
+            break;
+        case ASTAR:
+            searchAlgorithm = new Astar;
     }
 }
 
@@ -86,6 +106,6 @@ void Search::LoadManifest(string manifestFile) {
     }
 }
 
-void Search::Execute() {
-    searchAlgorithm->SearchData(2, 12, graph);
+void Search::Execute(int start, int end) {
+    searchAlgorithm->SearchData(start, end, graph);
 }

@@ -15,6 +15,7 @@ void IterativeBFS::BFSIter(int source, int target) {
     while (!queue.empty()) {
         path = queue.front();
         queue.pop();
+        this->numNodesExplored++;
 
         int lastNode = path[path.size() - 1];
         if (lastNode == target) {
@@ -28,7 +29,15 @@ void IterativeBFS::BFSIter(int source, int target) {
             }
         }
     }
-    printShortestPath(paths);
+    this->finalPath = this->shortestPath(paths);
+    //need to figure out cost
+    if (this->finalPath.size() > 1) {
+        for (int i = 1; i < this->finalPath.size(); i++) {
+            this->finalCost = this->g.adjMatrix[i - 1][i].second;
+        }
+    } else {
+        cout << "No path found" << endl;
+    }
 }
 
 vector<int> IterativeBFS::shortestPath(vector<vector<int>> paths) {
@@ -49,7 +58,7 @@ int IterativeBFS::isNotVisited(int x, vector<int> &path) {
 
 void IterativeBFS::printShortestPath(vector<vector<int>> paths) {
     vector<int> path(paths.size());
-    path = shortestPath(paths);
+    t = shortestPath(paths);
     for (int i = 0; i < path.size(); i++) {
         cout << path[i] << " ";
     }
@@ -59,5 +68,7 @@ void IterativeBFS::printShortestPath(vector<vector<int>> paths) {
 
 void IterativeBFS::SearchData(int source, int target, Graph g) {
     this->g = g;
+    this->startTime = chrono::high_resolution_clock::now();
     BFSIter(source, target);
+    this->endTime = chrono::high_resolution_clock::now();
 }

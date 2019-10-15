@@ -4,25 +4,29 @@
 #include "myBFS.h"
 #include "Search.h"
 #include "Dijkstra.h"
+#include "Astar.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
     Search s;
     s.LoadManifest("fileManifest.txt");
-    /*
+    int start = stoi(argv[1]);
+    int end = stoi(argv[2]);
     for (int i = s.DFSITER; i < s.LAST; i++) {
         for(int j = 0; j < s.numFiles; j++) {
-            s.Load(s.fileManifest[j]);
+            s.Load(s.fileManifest[0]);
             s.Select(i);
-            s.Execute();
+            s.Execute(start, end);
         }
+    }
+/*
+    for(int j = 0; j < s.numFiles; j++) {
+        s.Load(s.fileManifest[j]);
+        a.printShortestPath(a.AstarPath(s.graph.adjMatrix, s.graph.positions, start, 14), start);
+        //vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node, 5);
+        //d.PrintShortestPath(dist, node);
     }*/
-    s.Load(s.fileManifest[0]);
-    Dijkstra d;
-    int node = stoi(argv[1]);
-    vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node, 12);
-    d.PrintShortestPath(dist, node);
 
     return 0;
 }
