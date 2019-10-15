@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     s.Load(s.fileManifest[0]);
     Dijkstra d;
     int node = stoi(argv[1]);
-    vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node);
+    vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node, 12);
     d.PrintShortestPath(dist, node);
 
     return 0;
