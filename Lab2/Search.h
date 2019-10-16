@@ -8,8 +8,6 @@
 #include <string>
 #include "Algorithm.h"
 #include <vector>
-#include "myBFS.h"
-#include "myDFS.h"
 #include "SearchAlgorithm.h"
 #include <fstream>
 #include <sstream>
@@ -21,12 +19,12 @@
 #include "Astar.h"
 #include "Dijkstra.h"
 
-class Search {
+class Search : public Algorithm {
 public:
     Search();
     void Load(string fileName);
 
-    void Execute(int start, int end);
+    void Execute();
 
     void Stats(string type);
     void Select(int sortAlgo);
@@ -46,13 +44,12 @@ public:
         DFSITER, DFSRECUR, BFSITER, BFSRECUR, DIJKSTRA, ASTAR, LAST
     };
     Graph graph;
-
+    int start, end;
 private:
     string dirPath;
 
     void outputStats(string dataType);
     SearchAlgorithm *searchAlgorithm;
-    int start, end;
 };
 
 

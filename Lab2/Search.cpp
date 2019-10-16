@@ -14,7 +14,7 @@ void Search::Load(string dirPath) {
     this->dirPath = dirPath;
     vector<vector<pair<int, double>>> adjMatrix;
     vector<int> inputArray;
-    vector<double> inputWeightsArray;
+    vector<double> inputDoubleArray;
     ifstream inputGraph, inputWeights, inputPositions;
     inputGraph.open(dirPath + "/largeGraph.txt");
     inputWeights.open(dirPath + "/largeWeights.txt");
@@ -46,16 +46,16 @@ void Search::Load(string dirPath) {
             string substring;
             getline(inputStream, substring, ',');
             if (!substring.empty())
-                inputWeightsArray.push_back(stod(substring));
+                inputDoubleArray.push_back(stod(substring));
         }
-        for (int i = 0; i < adjMatrix[inputWeightsArray[0]].size(); i++) {
-            if (adjMatrix[(int) round(inputWeightsArray[0])][i] == make_pair((int) round(inputWeightsArray[1]), 0.0)) {
-                adjMatrix[(int) round(inputWeightsArray[0])][i] = make_pair(inputWeightsArray[1], inputWeightsArray[2]);
-                inputWeightsArray.clear();
+        for (int i = 0; i < adjMatrix[inputDoubleArray[0]].size(); i++) {
+            if (adjMatrix[(int) round(inputDoubleArray[0])][i] == make_pair((int) round(inputDoubleArray[1]), 0.0)) {
+                adjMatrix[(int) round(inputDoubleArray[0])][i] = make_pair(inputDoubleArray[1], inputDoubleArray[2]);
+                inputDoubleArray.clear();
             }
         }
     }
-    vector<tuple<int, int, int>> positions(size);
+    vector<tuple<double, double, double>> positions(size);
     while (!(inputPositions.eof())) {
         getline(inputPositions, inputLine);
         stringstream inputStream(inputLine);
@@ -63,10 +63,11 @@ void Search::Load(string dirPath) {
             string substring;
             getline(inputStream, substring, ',');
             if (!substring.empty())
-                inputArray.push_back(stoi(substring));
+                inputDoubleArray.push_back(stod(substring));
         }
-        positions[inputArray[0]] = make_tuple(inputArray[1], inputArray[2], inputArray[3]);
-        inputArray.clear();
+        positions[(int) round(inputDoubleArray[0])] = make_tuple(inputDoubleArray[1], inputDoubleArray[2],
+                                                                 inputDoubleArray[3]);
+        inputDoubleArray.clear();
     }
     inputGraph.close();
     inputWeights.close();
@@ -115,15 +116,12 @@ void Search::LoadManifest(string manifestFile) {
     }
 }
 
-void Search::Execute(int start, int end) {
-    this->start = start;
-    this->end = end;
-    cout << this->activeSearchLabel << " is Executing" << endl;
+void Search::Execute() {
     this->searchAlgorithm->startTime = chrono::high_resolution_clock::now();
     searchAlgorithm->SearchDataList(start, end, graph);
     this->searchAlgorithm->endTime = chrono::high_resolution_clock::now();
     outputStats("List");
-    Stats("Lists");
+    Stats("List");
     this->searchAlgorithm->startTime = chrono::high_resolution_clock::now();
     searchAlgorithm->SearchDataMatrix(start, end, graph);
     this->searchAlgorithm->endTime = chrono::high_resolution_clock::now();
@@ -135,20 +133,28 @@ void Search::Stats(string type) {
     double time_taken = chrono::duration_cast<chrono::nanoseconds>(
             this->searchAlgorithm->endTime - this->searchAlgorithm->startTime).count();
     time_taken *= 1e-9;
-    cout << "Time taken to search from " << start << " to " << end << " using " << activeSearchLabel << " in a " << type
-         << " is : "
-         << fixed << time_taken << setprecision(9) << " sec" << endl;
-    cout << "Num nodes explored = " << this->searchAlgorithm->numNodesExplored << endl;
-    cout << "The path found = ";
+    cout << endl << "Time taken to search from " << start << " to " << end << " using " << activeSearchLabel << " in a "
+         << type
+         << " is " << fixed << time_taken << setprecision(9) << " sec" << endl;
+    cout << "The path found is ";
     for (int i = 0; i < this->searchAlgorithm->finalPath.size(); i++) {
-        cout << this->searchAlgorithm->finalPath[i] << " ";
+        cout << this->searchAlgorithm->finalPath[i];
+        if (i < this->searchAlgorithm->finalPath.size() - 1) {
+            cout << "->";
+        }
     }
+    cout << endl;
+    cout << "The number of nodes in the path is " << this->searchAlgorithm->finalPath.size() << endl;
+    if (this->searchAlgorithm->finalCost > 0)
+        cout << "The cost of the path is " << this->searchAlgorithm->finalCost << endl;
+    cout << "The distance of the path is " << this->searchAlgorithm->finalDistance << endl;
+    cout << "Number of nodes explored is " << this->searchAlgorithm->numNodesExplored << endl;
     cout << endl;
 }
 
 void Search::outputStats(string dataType) {
     ofstream output;
-    output.open(dirPath + "/output" + dataType + "2.csv", fstream::app);
+    output.open(dirPath + "/output" + dataType + "3.csv", fstream::app);
     double time_taken = chrono::duration_cast<chrono::nanoseconds>(
             this->searchAlgorithm->endTime - this->searchAlgorithm->startTime).count();
     time_taken *= 1e-9;

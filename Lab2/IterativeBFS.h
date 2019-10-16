@@ -17,15 +17,11 @@ class IterativeBFS : public SearchAlgorithm {
 private:
     Graph g;
 
-    vector<int> shortestPath(vector<vector<int>> paths);
-
-
-    void printShortestPath(vector<vector<int>> paths);
-
     void BFSIterList(int source, int target);
 
     void BFSIterMatrix(int source, int target);
 
+    double calculateDistance(vector<int> path);
 
 public:
     void SearchDataList(int source, int target, Graph g);

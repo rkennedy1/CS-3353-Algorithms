@@ -17,10 +17,14 @@ private:
     void DFSIterList(int source, int target);
 
     void DFSIterMatrix(int source, int target);
+
+    double calculateDistance(vector<int> path);
+
 public:
     void SearchDataList(int source, int target, Graph g);
 
     void SearchDataMatrix(int source, int target, Graph g);
+
 };
 
 

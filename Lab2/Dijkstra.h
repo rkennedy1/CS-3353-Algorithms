@@ -16,7 +16,11 @@ using namespace std;
 
 class Dijkstra : public SearchAlgorithm {
 private:
-    void DijkstraAlgo(vector<vector<pair<int, double> > > &graph, int &start, int target);
+    Graph g;
+
+    void DijkstraList(int start, int target);
+
+    void DijkstraMatrix(int start, int target);
 public:
     void SearchDataList(int source, int target, Graph g);
 

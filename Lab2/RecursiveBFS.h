@@ -16,13 +16,16 @@ class RecursiveBFS : public SearchAlgorithm {
 private:
     Graph g;
 
-    vector<int> shortestPath(vector<vector<int>> paths);
+    double calculateDistance(vector<int> path);
 
-    void printShortestPath(vector<vector<int>> paths);
+    void BFSRecurList(int source, int target);
 
-    void BFSRecur(int source, int target);
+    void BFSRecurUtilList(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
+                          vector<int> &path);
 
-    void BFSRecurUtil(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
+    void BFSRecurMatrix(int source, int target);
+
+    void BFSRecurUtilMatrix(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
                       vector<int> &path);
 
 public:

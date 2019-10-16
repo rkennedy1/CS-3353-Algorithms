@@ -12,7 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code">
-      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/output.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputMatrix.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/output.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/output1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/outputList.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/outputList2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/outputMatrix.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputs/outputMatrix2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Algorithm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Astar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Astar.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Astar.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Astar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Dijkstra.cpp" afterDir="false" />
@@ -20,14 +28,15 @@
       <change beforePath="$PROJECT_DIR$/../../Lab2/Graph.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Graph.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Graph.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Graph.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeBFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeBFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeBFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeBFS.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeDFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeDFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeDFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeDFS.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Search.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/Search.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/SearchAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/SearchAlgorithm.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Astar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Astar.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Graph.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Graph.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeBFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeBFS.cpp.o" afterDir="false" />
@@ -36,8 +45,18 @@
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveDFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveDFS.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Search.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Search.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/myDFS.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/Lab2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/Lab2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large50/output.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large50/output1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large50/outputList.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/data/large50/outputList.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large50/outputList2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large50/outputMatrix2.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Lab2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/myBFS.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/myBFS.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/myDFS.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/myDFS.h" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +139,8 @@
       <workItem from="1571159601033" duration="1864000" />
       <workItem from="1571190582068" duration="579000" />
       <workItem from="1571247469849" duration="17000" />
+      <workItem from="1571257447490" duration="637000" />
+      <workItem from="1571264039489" duration="711000" />
     </task>
     <servers />
   </component>
@@ -154,11 +175,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Algorithm.h</url>
           <line>12</line>

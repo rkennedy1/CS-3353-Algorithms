@@ -16,15 +16,11 @@ class RecursiveDFS : public SearchAlgorithm {
 private:
     Graph g;
 
-    void DFSRecur(int source, int target);
+    void DFSRecurList(int source, int target, vector<bool> &visited, vector<int> path);
 
-    bool isNotVisited(int x, vector<int> &path);
+    void DFSRecurMatrix(int source, int target, vector<bool> &visited, vector<int> path);
 
-    void DFSRecurUtil(int s, int t, vector<bool> &visited, vector<int> path);
-
-    vector<int> shortestPath(vector<vector<int>> paths);
-
-    void printShortestPath(vector<vector<int>> paths);
+    double calculateDistance(vector<int> path);
 
 public:
     void SearchDataList(int source, int target, Graph g);

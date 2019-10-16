@@ -17,14 +17,13 @@ public:
 
     int numVertexes;
     vector<vector<pair<int, double>>> adjList;
-    vector<tuple<int, int, int>> positions;
+    vector<tuple<double, double, double>> positions;
     vector<vector<pair<int, double>>> adjMatrix;
 
-    void loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tuple<int, int, int>> &positions);
+    void loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tuple<double, double, double>> &positions);
 
     void addMatrixEdge(int a, int b, double weight);
 
-    void addListEdge(int index, int value);
 };
 
 

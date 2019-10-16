@@ -5,7 +5,6 @@
 #ifndef LAB2_ALGORITHM_H
 #define LAB2_ALGORITHM_H
 
-#endif //LAB2_ALGORITHM_H
 
 #include <string>
 
@@ -22,3 +21,5 @@ public:
     virtual void Save(string filePath) = 0;
     virtual void Configure() = 0;
 };
+
+#endif //LAB2_ALGORITHM_H

@@ -14,12 +14,15 @@
 using namespace std;
 
 class Astar : public SearchAlgorithm {
+private:
+    Graph g;
+
+    void AstarList(int start, int target);
+
+    void AstarMatrix(int start, int target);
+
+    double findDistance(tuple<double, double, double> a, tuple<double, double, double> b);
 public:
-    void AstarPath(vector<vector<pair<int, double> > > &graph, vector<tuple<int, int, int>> &positions, int &start,
-                   int target);
-
-    double findDistance(tuple<int, int, int> a, tuple<int, int, int> b);
-
     void SearchDataList(int source, int target, Graph g);
 
     void SearchDataMatrix(int source, int target, Graph g);

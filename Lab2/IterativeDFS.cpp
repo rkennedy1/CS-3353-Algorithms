@@ -21,7 +21,7 @@ void IterativeDFS::DFSIterList(int source, int target) {
         int lastNode = path[path.size() - 1];
         if (lastNode == target) {
             this->finalPath = path;
-            this->finalDistance = -1;
+            this->finalDistance = calculateDistance(path);
             this->finalCost = -1;
             return;
         }
@@ -54,7 +54,7 @@ void IterativeDFS::DFSIterMatrix(int source, int target) {
         int lastNode = path[path.size() - 1];
         if (lastNode == target) {
             this->finalPath = path;
-            this->finalDistance = -1;
+            this->finalDistance = calculateDistance(path);
             this->finalCost = -1;
             return;
         }
@@ -70,6 +70,17 @@ void IterativeDFS::DFSIterMatrix(int source, int target) {
         }
     }
     cout << endl;
+}
+
+double IterativeDFS::calculateDistance(vector<int> path) {
+    double distance = 0;
+    for (int i = 0; i < path.size() - 1; i++) {
+        distance += this->g.adjList[path[i]][path[i + 1]].second;
+    }
+    if (!distance) {
+        distance = 0;
+    }
+    return distance;
 }
 
 void IterativeDFS::SearchDataList(int source, int target, Graph g) {

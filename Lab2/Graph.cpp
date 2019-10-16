@@ -8,7 +8,7 @@ Graph::Graph() {
 
 }
 
-void Graph::loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tuple<int, int, int>> &positions) {
+void Graph::loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tuple<double, double, double>> &positions) {
     adjList = inputList;
     this->positions = positions;
     adjMatrix.resize(inputList.size());
@@ -20,9 +20,6 @@ void Graph::loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tupl
             addMatrixEdge(i, inputList[i][j].first, inputList[i][j].second);
         }
     }
-}
-
-void Graph::addListEdge(int index, int value) {
 }
 
 void Graph::addMatrixEdge(int a, int b, double weight) {
