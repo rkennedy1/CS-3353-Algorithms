@@ -13,19 +13,23 @@ int main(int argc, char *argv[]) {
     s.LoadManifest("fileManifest.txt");
     int start = stoi(argv[1]);
     int end = stoi(argv[2]);
-    for (int i = s.DFSITER; i < s.LAST; i++) {
-        for (int j = 0; j < s.fileManifest.size(); j++) {
-            s.Load(s.fileManifest[j]);
+    s.Load(s.fileManifest[0]);
+    for (int j = 0; j < 10; j++) {
+        start = s.generateRandomNode();
+        end = s.generateRandomNode();
+        while (start == end) {
+            end = s.generateRandomNode();
+        }
+        for (int i = s.DFSITER; i < s.DFSRECUR; i++) {
             s.Select(i);
             s.Execute(start, end);
-            s.Stats();
         }
     }
 /*
     for(int j = 0; j < s.numFiles; j++) {
         s.Load(s.fileManifest[j]);
-        a.printShortestPath(a.AstarPath(s.graph.adjMatrix, s.graph.positions, start, 14), start);
-        //vector<int> dist = d.DijkstraSP(s.graph.adjMatrix, node, 5);
+        a.printShortestPath(a.AstarPath(s.graph.adjList, s.graph.positions, start, 14), start);
+        //vector<int> dist = d.DijkstraSP(s.graph.adjList, node, 5);
         //d.PrintShortestPath(dist, node);
     }*/
 

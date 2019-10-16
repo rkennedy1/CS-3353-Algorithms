@@ -8,25 +8,34 @@ Graph::Graph() {
 
 }
 
-void Graph::loadGraphs(vector<vector<pair<int, int>>> &inputMatrix, vector<tuple<int, int, int>> &positions) {
-    adjMatrix = inputMatrix;
+void Graph::loadGraphs(vector<vector<pair<int, double>>> &inputList, vector<tuple<int, int, int>> &positions) {
+    adjList = inputList;
     this->positions = positions;
-    list<int> *tempList;
-    int temp = inputMatrix.size();
-    adjList = new list<int>[temp];
-    for (int i = 0; i < inputMatrix.size(); i++) {
-        for (int j = 0; j < inputMatrix[i].size(); j++) {
-            //addEdge(i, inputMatrix[i][j]);
+    adjMatrix.resize(inputList.size());
+    for (int i = 0; i < inputList.size(); i++) {
+        adjMatrix[i].resize(inputList.size());
+    }
+    for (int i = 0; i < inputList.size(); i++) {
+        for (int j = 0; j < inputList[i].size(); j++) {
+            addMatrixEdge(i, inputList[i][j].first, inputList[i][j].second);
         }
     }
 }
 
-void Graph::addEdge(int index, int value) {
-    adjList[index].push_back(value);
+void Graph::addListEdge(int index, int value) {
+}
+
+void Graph::addMatrixEdge(int a, int b, double weight) {
+    this->adjMatrix[a][b].first = 1;
+    this->adjMatrix[a][b].second = weight;
+
+    this->adjMatrix[b][a].first = 1;
+    this->adjMatrix[b][a].second = weight;
+
 }
 
 Graph::Graph(Graph *pGraph) {
     this->adjList = pGraph->adjList;
-    this->adjMatrix = pGraph->adjMatrix;
+    this->adjList = pGraph->adjList;
     this->numVertexes = pGraph->numVertexes;
 }

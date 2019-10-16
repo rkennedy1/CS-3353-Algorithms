@@ -18,14 +18,18 @@ private:
 
     void DFSRecur(int source, int target);
 
-    void DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, vector<vector<int>> &paths);
+    bool isNotVisited(int x, vector<int> &path);
+
+    void DFSRecurUtil(int s, int t, vector<bool> &visited, vector<int> path);
 
     vector<int> shortestPath(vector<vector<int>> paths);
 
     void printShortestPath(vector<vector<int>> paths);
 
 public:
-    void SearchData(int source, int target, Graph g);
+    void SearchDataList(int source, int target, Graph g);
+
+    void SearchDataMatrix(int source, int target, Graph g);
 };
 
 #endif //LAB2_RECURSIVEDFS_H

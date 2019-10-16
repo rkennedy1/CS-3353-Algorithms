@@ -4,13 +4,13 @@
 
 #include "Astar.h"
 
-void Astar::AstarPath(vector<vector<pair<int, int>>> &graph, vector<tuple<int, int, int>> &positions, int &start,
+void Astar::AstarPath(vector<vector<pair<int, double>>> &graph, vector<tuple<int, int, int>> &positions, int &start,
                       int target) {
-    vector<int> adjDistance;
-    vector<int> trueDistance;
+    vector<double> adjDistance;
+    vector<double> trueDistance;
     vector<int> path;
     vector<pair<vector<int>, int>> paths;
-    int tempDistance = 0;
+    double tempDistance = 0;
 
     for (int i = 0; i < graph.size(); i++) {
         adjDistance.push_back(INT_MAX); //makes all distances 'infinity'
@@ -37,9 +37,9 @@ void Astar::AstarPath(vector<vector<pair<int, int>>> &graph, vector<tuple<int, i
         }
         for (int i = 0; i < graph[parent].size(); i++) {
             int child = graph[parent][i].first;
-            int childWeight = graph[parent][i].second;
-            int childHeuristic = findDistance(positions[child], positions[target]);
-            int adjChildWeight = childWeight + childHeuristic;
+            double childWeight = graph[parent][i].second;
+            double childHeuristic = findDistance(positions[child], positions[target]);
+            double adjChildWeight = childWeight + childHeuristic;
 
             if (adjDistance[child] > adjDistance[parent] + adjChildWeight) {
                 adjDistance[child] = adjDistance[parent] + adjChildWeight;
@@ -53,28 +53,18 @@ void Astar::AstarPath(vector<vector<pair<int, int>>> &graph, vector<tuple<int, i
 
 }
 
-int Astar::findDistance(tuple<int, int, int> a, tuple<int, int, int> b) {
+double Astar::findDistance(tuple<int, int, int> a, tuple<int, int, int> b) {
     return (pow((get<0>(b) - get<0>(a)), 2)
             + (pow((get<1>(b) - get<1>(a)), 2))
             + pow((get<2>(b) - get<2>(a)), 2));
 }
 
-void Astar::printShortestPath(vector<int> adjDistance, int start) {
-    for (int j = start; j < adjDistance.size(); j++) {
-        cout << "Distance from " << start << " to " << j << " is " << adjDistance[j] << endl;
-    }
-}
-
-void Astar::printShortestPath(vector<pair<vector<int>, int>> paths) {
-    for (int j = 0; j < paths.size(); j++) {
-        for (int i = 0; i < paths[j].first.size(); i++) {
-            cout << paths[j].first[i] << " ";
-        }
-        cout << " - Astar Distance: " << paths[j].second << endl;
-    }
-}
-
-void Astar::SearchData(int source, int target, Graph g) {
+void Astar::SearchDataList(int source, int target, Graph g) {
     this->numNodesExplored = 0;
-    AstarPath(g.adjMatrix, g.positions, source, target);
+    AstarPath(g.adjList, g.positions, source, target);
+}
+
+void Astar::SearchDataMatrix(int source, int target, Graph g) {
+    this->numNodesExplored = 0;
+    AstarPath(g.adjList, g.positions, source, target);
 }

@@ -26,7 +26,9 @@ private:
                       vector<int> &path);
 
 public:
-    void SearchData(int source, int target, Graph g);
+    void SearchDataList(int source, int target, Graph g);
+
+    void SearchDataMatrix(int source, int target, Graph g);
 };
 
 

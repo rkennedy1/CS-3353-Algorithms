@@ -19,14 +19,18 @@ private:
 
     vector<int> shortestPath(vector<vector<int>> paths);
 
-    int isNotVisited(int x, vector<int> &path);
 
     void printShortestPath(vector<vector<int>> paths);
 
-    void BFSIter(int source, int target);
+    void BFSIterList(int source, int target);
+
+    void BFSIterMatrix(int source, int target);
+
 
 public:
-    void SearchData(int source, int target, Graph g);
+    void SearchDataList(int source, int target, Graph g);
+
+    void SearchDataMatrix(int source, int target, Graph g);
 
 };
 

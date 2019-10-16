@@ -11,8 +11,10 @@ Search::Search() {
 }
 
 void Search::Load(string dirPath) {
-    vector<vector<pair<int, int>>> adjMatrix;
+    this->dirPath = dirPath;
+    vector<vector<pair<int, double>>> adjMatrix;
     vector<int> inputArray;
+    vector<double> inputWeightsArray;
     ifstream inputGraph, inputWeights, inputPositions;
     inputGraph.open(dirPath + "/largeGraph.txt");
     inputWeights.open(dirPath + "/largeWeights.txt");
@@ -44,12 +46,12 @@ void Search::Load(string dirPath) {
             string substring;
             getline(inputStream, substring, ',');
             if (!substring.empty())
-                inputArray.push_back(stoi(substring));
+                inputWeightsArray.push_back(stod(substring));
         }
-        for (int i = 0; i < adjMatrix[inputArray[0]].size(); i++) {
-            if (adjMatrix[inputArray[0]][i] == make_pair(inputArray[1], 0)) {
-                adjMatrix[inputArray[0]][i] = make_pair(inputArray[1], inputArray[2]);
-                inputArray.clear();
+        for (int i = 0; i < adjMatrix[inputWeightsArray[0]].size(); i++) {
+            if (adjMatrix[(int) round(inputWeightsArray[0])][i] == make_pair((int) round(inputWeightsArray[1]), 0.0)) {
+                adjMatrix[(int) round(inputWeightsArray[0])][i] = make_pair(inputWeightsArray[1], inputWeightsArray[2]);
+                inputWeightsArray.clear();
             }
         }
     }
@@ -69,8 +71,8 @@ void Search::Load(string dirPath) {
     inputGraph.close();
     inputWeights.close();
     inputPositions.close();
-    cout << dirPath << ": file data has been loaded" << endl;
     graph.loadGraphs(adjMatrix, positions);
+    this->numNodes = size;
 }
 
 void Search::Select(int searchAlgorithmInput) {
@@ -114,19 +116,27 @@ void Search::LoadManifest(string manifestFile) {
 }
 
 void Search::Execute(int start, int end) {
-
+    this->start = start;
+    this->end = end;
     cout << this->activeSearchLabel << " is Executing" << endl;
     this->searchAlgorithm->startTime = chrono::high_resolution_clock::now();
-    searchAlgorithm->SearchData(start, end, graph);
+    searchAlgorithm->SearchDataList(start, end, graph);
     this->searchAlgorithm->endTime = chrono::high_resolution_clock::now();
-
+    outputStats("List");
+    Stats("Lists");
+    this->searchAlgorithm->startTime = chrono::high_resolution_clock::now();
+    searchAlgorithm->SearchDataMatrix(start, end, graph);
+    this->searchAlgorithm->endTime = chrono::high_resolution_clock::now();
+    Stats("Matrix");
+    outputStats("Matrix");
 }
 
-void Search::Stats() {
+void Search::Stats(string type) {
     double time_taken = chrono::duration_cast<chrono::nanoseconds>(
             this->searchAlgorithm->endTime - this->searchAlgorithm->startTime).count();
     time_taken *= 1e-9;
-    cout << "Time taken to search from " << start << " to " << end << " using " << activeSearchLabel << " is : "
+    cout << "Time taken to search from " << start << " to " << end << " using " << activeSearchLabel << " in a " << type
+         << " is : "
          << fixed << time_taken << setprecision(9) << " sec" << endl;
     cout << "Num nodes explored = " << this->searchAlgorithm->numNodesExplored << endl;
     cout << "The path found = ";
@@ -134,4 +144,22 @@ void Search::Stats() {
         cout << this->searchAlgorithm->finalPath[i] << " ";
     }
     cout << endl;
+}
+
+void Search::outputStats(string dataType) {
+    ofstream output;
+    output.open(dirPath + "/output" + dataType + "2.csv", fstream::app);
+    double time_taken = chrono::duration_cast<chrono::nanoseconds>(
+            this->searchAlgorithm->endTime - this->searchAlgorithm->startTime).count();
+    time_taken *= 1e-9;
+    output << this->activeSearchLabel << ',' << start << ',' << end << ',' << this->searchAlgorithm->finalPath.size()
+           << ','
+           << this->searchAlgorithm->numNodesExplored << ',' << fixed << time_taken << setprecision(9) << ','
+           << this->searchAlgorithm->finalDistance << ',' << this->searchAlgorithm->finalCost << endl;
+    output.close();
+}
+
+int Search::generateRandomNode() {
+    srand(time(NULL));
+    return rand() % numNodes + 1;
 }

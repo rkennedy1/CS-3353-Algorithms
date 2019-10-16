@@ -27,22 +27,30 @@ public:
     void Load(string fileName);
 
     void Execute(int start, int end);
-    void Stats();
+
+    void Stats(string type);
     void Select(int sortAlgo);
-    void Save(string filePath);
-    void Display();
+
+    void Save(string filePath) {}
+
+    void Display() {}
     void LoadManifest(string manifestFile);
     void Configure() {}
     vector<string> fileManifest;
     int numFiles;
     string activeSearchLabel;
+    int numNodes;
 
+    int generateRandomNode();
     enum SearchAlgo {
         DFSITER, DFSRECUR, BFSITER, BFSRECUR, DIJKSTRA, ASTAR, LAST
     };
     Graph graph;
 
 private:
+    string dirPath;
+
+    void outputStats(string dataType);
     SearchAlgorithm *searchAlgorithm;
     int start, end;
 };

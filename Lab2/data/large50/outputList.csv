@@ -1,0 +1,61 @@
+Type,Start,End,Num Explored,,Time,Distance,Cost
+Depth First Search - Iterative,205,2006,46,46,0.6094,-1,-1
+Depth First Search - Recursive,205,2006,1800,2500,0.435012,-1,-1
+Breadth First Search - Iterative,205,2006,38,1041,0.300683,-1,-1
+Breadth First Search - Recursive,205,2006,38,2500,0.239277,-1,-1
+Dijkstra,205,2006,50,11293,0.25155,12.904,-1
+Astar,205,2006,38,49050,0.439175,19.004,14966
+Depth First Search - Iterative,606,2407,62,62,0.188683,-1,-1
+Depth First Search - Recursive,606,2407,1800,3305,0.247157,-1,-1
+Breadth First Search - Iterative,606,2407,38,1354,0.20162,-1,-1
+Breadth First Search - Recursive,606,2407,38,2500,0.214209,-1,-1
+Dijkstra,606,2407,58,24901,0.262292,11.59,-1
+Astar,606,2407,38,472027,3.07752,19.628,14965
+Depth First Search - Iterative,2108,1408,15,15,0.292327,-1,-1
+Depth First Search - Recursive,2108,1408,717,3706,0.408627,-1,-1
+Breadth First Search - Iterative,2108,1408,15,324,0.256414,-1,-1
+Breadth First Search - Recursive,2108,1408,15,2500,0.223933,-1,-1
+Dijkstra,2108,1408,17,169024,1.207059,4.566,-1
+Astar,2108,1408,15,2192926,14.650141,6.891,825
+Depth First Search - Iterative,2013,1313,15,15,0.206213,-1,-1
+Depth First Search - Recursive,2013,1313,727,4362,0.27117,-1,-1
+Breadth First Search - Iterative,2013,1313,15,393,0.244897,-1,-1
+Breadth First Search - Recursive,2013,1313,15,2500,0.247737,-1,-1
+Dijkstra,2013,1313,19,144277,0.948207,5.72,-1
+Astar,2013,1313,15,2617837,18.284334,7.142,826
+Depth First Search - Iterative,2319,1619,15,15,0.24114,-1,-1
+Depth First Search - Recursive,2319,1619,739,4011,0.294471,-1,-1
+Breadth First Search - Iterative,2319,1619,15,301,0.216697,-1,-1
+Breadth First Search - Recursive,2319,1619,15,2500,0.225462,-1,-1
+Dijkstra,2319,1619,21,249758,1.544372,5.636,-1
+Astar,2319,1619,15,3797460,28.427994,8.553,827
+Depth First Search - Iterative,627,2428,62,62,0.263465,-1,-1
+Depth First Search - Recursive,627,2428,1800,2500,0.527106,-1,-1
+Breadth First Search - Iterative,627,2428,38,1872,0.255404,-1,-1
+Breadth First Search - Recursive,627,2428,38,2500,0.240931,-1,-1
+Dijkstra,627,2428,46,17533,0.256422,14.151,-1
+Astar,627,2428,38,128556,0.83706,19.298,14965
+Depth First Search - Iterative,1028,328,15,15,0.237578,-1,-1
+Depth First Search - Recursive,1028,328,757,2500,0.268407,-1,-1
+Breadth First Search - Iterative,1028,328,15,422,0.217373,-1,-1
+Breadth First Search - Recursive,1028,328,15,2500,0.235637,-1,-1
+Dijkstra,1028,328,19,46909,0.371473,4.645,-1
+Astar,1028,328,15,19947,0.419226,6.817,825
+Depth First Search - Iterative,2129,1429,15,15,0.235051,-1,-1
+Depth First Search - Recursive,2129,1429,759,3516,0.277988,-1,-1
+Breadth First Search - Iterative,2129,1429,15,373,0.216973,-1,-1
+Breadth First Search - Recursive,2129,1429,15,2500,0.22745,-1,-1
+Dijkstra,2129,1429,25,208663,1.249212,6.441,-1
+Astar,2129,1429,15,2152662,15.535228,8.867,827
+Depth First Search - Iterative,2034,1334,15,15,0.214936,-1,-1
+Depth First Search - Recursive,2034,1334,769,2500,0.253448,-1,-1
+Breadth First Search - Iterative,2034,1334,15,397,0.203391,-1,-1
+Breadth First Search - Recursive,2034,1334,15,2500,0.241287,-1,-1
+Dijkstra,2034,1334,19,189511,1.206293,5.402,-1
+Astar,2034,1334,15,1481539,9.975844,7.563,826
+Depth First Search - Iterative,437,2238,54,54,0.212878,-1,-1
+Depth First Search - Recursive,437,2238,1800,21810,0.300126,-1,-1
+Breadth First Search - Iterative,437,2238,38,1515,0.22408,-1,-1
+Breadth First Search - Recursive,437,2238,38,2500,0.224576,-1,-1
+Dijkstra,437,2238,56,19797,0.232977,14.178,-1
+Astar,437,2238,38,136924,0.905618,19.105,14965

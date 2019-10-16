@@ -14,13 +14,15 @@ using namespace std;
 class SearchAlgorithm {
 public:
     vector<int> finalPath;
-    int finalDistance;
-    int finalCost;
+    double finalDistance;
+    double finalCost;
     int numNodesExplored;
     chrono::steady_clock::time_point startTime;
     chrono::steady_clock::time_point endTime;
 
-    virtual void SearchData(int source, int target, Graph g) = 0;
+    virtual void SearchDataList(int source, int target, Graph g) = 0;
+
+    virtual void SearchDataMatrix(int source, int target, Graph g) = 0;
 };
 
 #endif //LAB2_SEARCHALGORITHM_H

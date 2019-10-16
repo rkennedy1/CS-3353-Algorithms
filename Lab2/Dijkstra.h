@@ -15,17 +15,12 @@
 using namespace std;
 
 class Dijkstra : public SearchAlgorithm {
+private:
+    void DijkstraAlgo(vector<vector<pair<int, double> > > &graph, int &start, int target);
 public:
+    void SearchDataList(int source, int target, Graph g);
 
-    vector<int> DijkstraAlgo(vector<vector<pair<int, int> > > &graph, int &start, int target);
-
-    void printShortestPath(vector<pair<vector<int>, int>>);
-
-    void PrintShortestPath(vector<int> &dist, int &start);
-
-    void SearchData(int source, int target, Graph g);
-
-    vector<int> shortestPath(vector<pair<vector<int>, int>> paths);
+    void SearchDataMatrix(int source, int target, Graph g);
 };
 
 

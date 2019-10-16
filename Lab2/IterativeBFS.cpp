@@ -4,7 +4,8 @@
 
 #include "IterativeBFS.h"
 
-void IterativeBFS::BFSIter(int source, int target) {
+void IterativeBFS::BFSIterList(int source, int target) {
+    vector<bool> visited(g.adjList.size(), false);
     queue<vector<int>> queue;
     vector<int> path;
     vector<vector<int>> paths;
@@ -16,49 +17,67 @@ void IterativeBFS::BFSIter(int source, int target) {
         path = queue.front();
         queue.pop();
         this->numNodesExplored++;
+
         int lastNode = path[path.size() - 1];
         if (lastNode == target) {
             this->finalPath = path;
-            this->finalDistance = this->finalPath.size();
+            this->finalDistance = -1;
+            this->finalCost = -1;
             return;
         }
-        for (int i = 0; i < this->g.adjMatrix[lastNode].size(); i++) {
-            if (isNotVisited(this->g.adjMatrix[lastNode][i].first, path)) {
+        for (int i = 0; i < this->g.adjList[lastNode].size(); i++) {
+            if (!visited[this->g.adjList[lastNode][i].first]) {
+                visited[this->g.adjList[lastNode][i].first] = true;
                 vector<int> newPath(path);
-                newPath.push_back(this->g.adjMatrix[lastNode][i].first);
+                newPath.push_back(this->g.adjList[lastNode][i].first);
                 queue.push(newPath);
             }
         }
     }
 }
 
-vector<int> IterativeBFS::shortestPath(vector<vector<int>> paths) {
-    int shortestI = 0;
-    for (int i = 1; i < paths.size(); i++) {
-        if (paths[shortestI].size() > paths[i].size())
-            shortestI = i;
+void IterativeBFS::BFSIterMatrix(int source, int target) {
+    queue<vector<int>> queue;
+    vector<int> path;
+    vector<vector<int>> paths;
+    vector<bool> visited(g.adjMatrix.size(), false);
+
+
+    path.push_back(source);
+    queue.push(path);
+
+    while (!queue.empty()) {
+        path = queue.front();
+        queue.pop();
+        this->numNodesExplored++;
+        int lastNode = path[path.size() - 1];
+        if (lastNode == target) {
+            this->finalPath = path;
+            this->finalDistance = -1;
+            this->finalCost = -1;
+            return;
+        }
+        for (int i = 0; i < this->g.adjMatrix[lastNode].size(); i++) {
+            if (this->g.adjMatrix[lastNode][i].first == 1) {
+                if (!visited[i]) {
+                    visited[i] = true;
+                    vector<int> newPath(path);
+                    newPath.push_back(i);
+                    queue.push(newPath);
+                }
+            }
+        }
     }
-    return paths[shortestI];
 }
 
-int IterativeBFS::isNotVisited(int x, vector<int> &path) {
-    for (int i = 0; i < path.size(); i++)
-        if (path[i] == x)
-            return 0;
-    return 1;
-}
-
-void IterativeBFS::printShortestPath(vector<vector<int>> paths) {
-    vector<int> path(paths.size());
-    for (int i = 0; i < path.size(); i++) {
-        cout << path[i] << " ";
-    }
-    cout << endl;
-}
-
-
-void IterativeBFS::SearchData(int source, int target, Graph g) {
+void IterativeBFS::SearchDataList(int source, int target, Graph g) {
     this->g = g;
     this->numNodesExplored = 0;
-    BFSIter(source, target);
+    BFSIterList(source, target);
+}
+
+void IterativeBFS::SearchDataMatrix(int source, int target, Graph g) {
+    this->g = g;
+    this->numNodesExplored = 0;
+    BFSIterMatrix(source, target);
 }

@@ -14,16 +14,13 @@ class IterativeDFS : public SearchAlgorithm {
 private:
     Graph g;
 
-    void DFSIter(int source, int target);
+    void DFSIterList(int source, int target);
 
-    void printShortestPath(vector<vector<int>> paths);
-
-    vector<int> shortestPath(vector<vector<int>> paths);
-
-    int isNotVisited(int x, vector<int> &path);
-
+    void DFSIterMatrix(int source, int target);
 public:
-    void SearchData(int source, int target, Graph g);
+    void SearchDataList(int source, int target, Graph g);
+
+    void SearchDataMatrix(int source, int target, Graph g);
 };
 
 
