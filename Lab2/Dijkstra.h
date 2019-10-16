@@ -27,5 +27,4 @@ public:
     void SearchDataMatrix(int source, int target, Graph g);
 };
 
-
 #endif //LAB2_DIJKSTRA_H
