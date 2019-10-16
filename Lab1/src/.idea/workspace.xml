@@ -11,7 +11,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code" />
+    <list default="true" id="97168911-34bf-49df-966c-932e3fcf0881" name="Default Changelist" comment="refactored code">
+      <change afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Astar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Astar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Astar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Astar.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Astar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Dijkstra.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Dijkstra.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Dijkstra.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Dijkstra.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeBFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeBFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/IterativeDFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/IterativeDFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveBFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/RecursiveDFS.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Search.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/Search.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/Search.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeBFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeBFS.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeDFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/IterativeDFS.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveBFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveBFS.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveDFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/RecursiveDFS.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Search.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/Search.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/myDFS.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/myDFS.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/Lab2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/Lab2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/fileManifest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/cmake-build-debug/fileManifest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/data/large100/largeGraph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/data/large100/largeGraph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab2/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/main.cpp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +114,8 @@
       <workItem from="1570913689623" duration="2216000" />
       <workItem from="1571011519769" duration="5225000" />
       <workItem from="1571026682228" duration="4000" />
+      <workItem from="1571159601033" duration="1864000" />
+      <workItem from="1571190582068" duration="579000" />
     </task>
     <servers />
   </component>

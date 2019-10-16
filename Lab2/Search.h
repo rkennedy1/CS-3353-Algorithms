@@ -37,7 +37,6 @@ public:
     int numFiles;
     string activeSearchLabel;
 
-    //DIJKSTRA, ASTAR,
     enum SearchAlgo {
         DFSITER, DFSRECUR, BFSITER, BFSRECUR, DIJKSTRA, ASTAR, LAST
     };
@@ -45,6 +44,7 @@ public:
 
 private:
     SearchAlgorithm *searchAlgorithm;
+    int start, end;
 };
 
 

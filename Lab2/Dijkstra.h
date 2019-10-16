@@ -24,6 +24,8 @@ public:
     void PrintShortestPath(vector<int> &dist, int &start);
 
     void SearchData(int source, int target, Graph g);
+
+    vector<int> shortestPath(vector<pair<vector<int>, int>> paths);
 };
 
 

@@ -8,15 +8,17 @@ void RecursiveDFS::DFSRecur(int source, int target) {
     vector<bool> visited(g.adjMatrix.size(), false);
     vector<int> path;
     vector<vector<int>> paths;
-    DFSRecurUtil(source, target, visited, path, paths);
-    printShortestPath(paths);
+    //DFSRecurUtil(source, target, visited, path, paths);
 }
 
 void RecursiveDFS::DFSRecurUtil(int s, int t, vector<bool> visited, vector<int> path, vector<vector<int>> &paths) {
     visited[s] = true;
     path.push_back(s);
+    this->numNodesExplored++;
     if (s == t) {
-        paths.push_back(path);
+        this->finalPath = path;
+        this->finalDistance = this->finalPath.size();
+        return;
     } else {
         for (auto i : g.adjMatrix[s]) {
             if (!visited[i.first]) {

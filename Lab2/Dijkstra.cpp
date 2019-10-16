@@ -23,6 +23,7 @@ vector<int> Dijkstra::DijkstraAlgo(vector<vector<pair<int, int>>> &graph, int &s
         path = get<2>(priorityQueue.top());
         tempDistance = get<1>(priorityQueue.top());
         priorityQueue.pop();
+        this->numNodesExplored++;
 
         int lastNode = path[path.size() - 1];
         if (lastNode == target) {
@@ -41,7 +42,8 @@ vector<int> Dijkstra::DijkstraAlgo(vector<vector<pair<int, int>>> &graph, int &s
             }
         }
     }
-    printShortestPath(paths);
+    this->finalPath = shortestPath(paths);
+    this->finalDistance = distance[target];
     return distance;
 }
 
@@ -54,6 +56,15 @@ void Dijkstra::printShortestPath(vector<pair<vector<int>, int>> paths) {
     }
 }
 
+vector<int> Dijkstra::shortestPath(vector<pair<vector<int>, int>> paths) {
+    int shortestI = 0;
+    for (int i = 1; i < paths.size(); i++) {
+        if (paths[shortestI].first.size() > paths[i].first.size())
+            shortestI = i;
+    }
+    return paths[shortestI].first;
+}
+
 void Dijkstra::PrintShortestPath(vector<int> &dist, int &start) {
     cout << "\nPrinting the shortest paths for node " << start << ".\n";
     for (int i = start; i < dist.size(); i++) {
@@ -62,5 +73,6 @@ void Dijkstra::PrintShortestPath(vector<int> &dist, int &start) {
 }
 
 void Dijkstra::SearchData(int source, int target, Graph g) {
+    this->numNodesExplored = 0;
     DijkstraAlgo(g.adjMatrix, source, target);
 }

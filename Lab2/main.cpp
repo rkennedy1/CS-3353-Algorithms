@@ -14,10 +14,11 @@ int main(int argc, char *argv[]) {
     int start = stoi(argv[1]);
     int end = stoi(argv[2]);
     for (int i = s.DFSITER; i < s.LAST; i++) {
-        for(int j = 0; j < s.numFiles; j++) {
-            s.Load(s.fileManifest[0]);
+        for (int j = 0; j < s.fileManifest.size(); j++) {
+            s.Load(s.fileManifest[j]);
             s.Select(i);
             s.Execute(start, end);
+            s.Stats();
         }
     }
 /*

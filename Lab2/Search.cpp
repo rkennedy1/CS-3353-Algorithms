@@ -27,7 +27,8 @@ void Search::Load(string dirPath) {
         while (inputStream.good()) {
             string substring;
             getline(inputStream, substring, ',');
-            inputArray.push_back(stoi(substring));
+            if (!substring.empty())
+                inputArray.push_back(stoi(substring));
         }
         adjMatrix.resize(size);
         int inputArrSize = inputArray.size();
@@ -42,7 +43,8 @@ void Search::Load(string dirPath) {
         while (inputStream.good()) {
             string substring;
             getline(inputStream, substring, ',');
-            inputArray.push_back(stoi(substring));
+            if (!substring.empty())
+                inputArray.push_back(stoi(substring));
         }
         for (int i = 0; i < adjMatrix[inputArray[0]].size(); i++) {
             if (adjMatrix[inputArray[0]][i] == make_pair(inputArray[1], 0)) {
@@ -58,13 +60,16 @@ void Search::Load(string dirPath) {
         while (inputStream.good()) {
             string substring;
             getline(inputStream, substring, ',');
-            inputArray.push_back(stoi(substring));
+            if (!substring.empty())
+                inputArray.push_back(stoi(substring));
         }
         positions[inputArray[0]] = make_tuple(inputArray[1], inputArray[2], inputArray[3]);
         inputArray.clear();
     }
     inputGraph.close();
     inputWeights.close();
+    inputPositions.close();
+    cout << dirPath << ": file data has been loaded" << endl;
     graph.loadGraphs(adjMatrix, positions);
 }
 
@@ -92,6 +97,8 @@ void Search::Select(int searchAlgorithmInput) {
             break;
         case ASTAR:
             searchAlgorithm = new Astar;
+            activeSearchLabel = "Astar";
+            break;
     }
 }
 
@@ -107,5 +114,24 @@ void Search::LoadManifest(string manifestFile) {
 }
 
 void Search::Execute(int start, int end) {
+
+    cout << this->activeSearchLabel << " is Executing" << endl;
+    this->searchAlgorithm->startTime = chrono::high_resolution_clock::now();
     searchAlgorithm->SearchData(start, end, graph);
+    this->searchAlgorithm->endTime = chrono::high_resolution_clock::now();
+
+}
+
+void Search::Stats() {
+    double time_taken = chrono::duration_cast<chrono::nanoseconds>(
+            this->searchAlgorithm->endTime - this->searchAlgorithm->startTime).count();
+    time_taken *= 1e-9;
+    cout << "Time taken to search from " << start << " to " << end << " using " << activeSearchLabel << " is : "
+         << fixed << time_taken << setprecision(9) << " sec" << endl;
+    cout << "Num nodes explored = " << this->searchAlgorithm->numNodesExplored << endl;
+    cout << "The path found = ";
+    for (int i = 0; i < this->searchAlgorithm->finalPath.size(); i++) {
+        cout << this->searchAlgorithm->finalPath[i] << " ";
+    }
+    cout << endl;
 }

@@ -15,10 +15,13 @@ void IterativeDFS::DFSIter(int source, int target) {
     while (!stack.empty()) {
         path = stack.top();
         stack.pop();
+        this->numNodesExplored++;
 
         int last = path[path.size() - 1];
         if (last == target) {
-            paths.push_back(path);
+            this->finalPath = path;
+            this->finalDistance = this->finalPath.size();
+            return;
         }
         for (int i = 0; i < this->g.adjMatrix[last].size(); i++) {
             if (isNotVisited(this->g.adjMatrix[last][i].first, path)) {
@@ -28,7 +31,7 @@ void IterativeDFS::DFSIter(int source, int target) {
             }
         }
     }
-    printShortestPath(paths);
+    cout << endl;
 }
 
 int IterativeDFS::isNotVisited(int x, vector<int> &path) {
@@ -58,5 +61,6 @@ void IterativeDFS::printShortestPath(vector<vector<int>> paths) {
 
 void IterativeDFS::SearchData(int source, int target, Graph g) {
     this->g = g;
+    this->numNodesExplored = 0;
     DFSIter(source, target);
 }

@@ -15,7 +15,7 @@ using namespace std;
 
 class Astar : public SearchAlgorithm {
 public:
-    vector<int>
+    void
     AstarPath(vector<vector<pair<int, int> > > &graph, vector<tuple<int, int, int>> &positions, int &start, int target);
 
     int findDistance(tuple<int, int, int> a, tuple<int, int, int> b);

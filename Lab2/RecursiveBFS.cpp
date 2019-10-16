@@ -17,7 +17,6 @@ void RecursiveBFS::BFSRecur(int source, int target) {
             BFSRecurUtil(target, q, visited, paths, path);
         }
     }
-    printShortestPath(paths);
 }
 
 void RecursiveBFS::BFSRecurUtil(int target, queue<vector<int>> &q, vector<bool> &visited, vector<vector<int>> &paths,
@@ -26,9 +25,12 @@ void RecursiveBFS::BFSRecurUtil(int target, queue<vector<int>> &q, vector<bool> 
         return;
     path = q.front();
     q.pop();
+    this->numNodesExplored++;
     int lastNode = path[path.size() - 1];
     if (lastNode == target) {
-        paths.push_back(path);
+        this->finalPath = path;
+        this->finalDistance = this->finalPath.size();
+        return;
     }
     for (auto i : this->g.adjMatrix[lastNode]) {
         if (!visited[i.first]) {
@@ -77,5 +79,6 @@ void RecursiveBFS::printShortestPath(vector<vector<int>> paths) {
 
 void RecursiveBFS::SearchData(int source, int target, Graph g) {
     this->g = g;
+    this->numNodesExplored = 0;
     BFSRecur(source, target);
 }
