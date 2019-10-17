@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Lab2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2">
+				<Option output="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Lab2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Lab2/fast">
+				<Option output="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Lab2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 Lab2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/RyanKennedy/Desktop/School/Third\ Year/CS-3353/CS-3353-Algorithms/Lab2/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Algorithm.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Astar.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Astar.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Dijkstra.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Dijkstra.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeBFS.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeBFS.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeDFS.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeDFS.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveBFS.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveBFS.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveDFS.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveDFS.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Search.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Search.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/main.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

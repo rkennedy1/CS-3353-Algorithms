@@ -1,0 +1,126 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Algorithm.h
+string
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Astar.h
+vector
+-
+queue
+-
+iostream
+-
+cmath
+-
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Dijkstra.h
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+vector
+-
+iostream
+-
+queue
+-
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+list
+-
+vector
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeBFS.h
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+queue
+-
+iostream
+-
+vector
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeDFS.h
+stack
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+iostream
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveBFS.h
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+queue
+-
+vector
+-
+iostream
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveDFS.h
+vector
+-
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+iostream
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Search.cpp
+Search.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Search.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Search.h
+string
+-
+Algorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Algorithm.h
+vector
+-
+SearchAlgorithm.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+fstream
+-
+sstream
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+RecursiveBFS.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveBFS.h
+RecursiveDFS.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/RecursiveDFS.h
+IterativeBFS.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeBFS.h
+IterativeDFS.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/IterativeDFS.h
+Astar.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Astar.h
+Dijkstra.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Dijkstra.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/SearchAlgorithm.h
+vector
+-
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab2/src/Graph.h
+chrono
+-
+
