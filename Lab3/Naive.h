@@ -7,16 +7,20 @@
 
 #include <vector>
 #include <tuple>
+#include <iostream>
+#include "Graph.h"
 
 using namespace std;
 
 class Naive {
 private:
     int nodeExplored;
-    vector<tuple<float, float,float>> bestPath;
-    int calcDistance(tuple<float,float,float> a, tuple<float,float,float> b);
+    vector<int> bestPath;
+    float costOfBestPath;
+    void printPath();
 public:
-    vector<int> shortestPath(vector<vector<tuple<float,float,float>>> points);
+    void shortestPath(Graph &g);
+    void checkBestPath(vector<int>path, Graph & g);
 };
 
 

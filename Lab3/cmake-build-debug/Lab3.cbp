@@ -89,6 +89,12 @@
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.h">
 			<Option target="Lab3"/>
 		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Graph.cpp">
+			<Option target="Lab3"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Graph.h">
+			<Option target="Lab3"/>
+		</Unit>
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Naive.cpp">
 			<Option target="Lab3"/>
 		</Unit>
