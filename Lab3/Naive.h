@@ -8,19 +8,21 @@
 #include <vector>
 #include <tuple>
 #include <iostream>
+#include <algorithm>
 #include "Graph.h"
 
 using namespace std;
 
 class Naive {
 private:
-    int nodeExplored;
+    int nodesExplored;
     vector<int> bestPath;
     float costOfBestPath;
     void printPath();
 public:
     void shortestPath(Graph &g);
-    void checkBestPath(vector<int>path, Graph & g);
+
+    void checkBestPath(vector<int> path, Graph &g);
 };
 
 

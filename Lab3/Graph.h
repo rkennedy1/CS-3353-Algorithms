@@ -19,7 +19,8 @@ public:
     Graph();
     void addNode(int, float,float,float);
     float getDist(int,int);
-    float getPathDistance(vector<int>);
+
+    float getPathDistance(vector<int> &path);
     vector<int> nodes;
 };
 

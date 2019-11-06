@@ -7,23 +7,30 @@
 
 void Naive::shortestPath(Graph &g) {
     vector<pair<int, vector<int>>> solutions;
-    vector<int> nodes = g.nodes;
-    nodeExplored = 0;
+    vector<int> nodes;
+    for (int i = 0; i < g.nodes.size(); i++) {
+        nodes.push_back(g.nodes[i]);
+    }
+    sort(nodes.begin(), nodes.end());
+    nodesExplored = 0;
     costOfBestPath = INT_MAX;
+    bestPath = nodes;
     do {
-        checkBestPath(nodes, g);
-        nodeExplored++;
+        if (nodes[0] == g.nodes[0]) {
+            checkBestPath(nodes, g);
+            nodesExplored++;
+        }
     } while(next_permutation(nodes.begin(), nodes.end()));
     printPath();
-    cout << "Nodes explored: " << nodeExplored << endl << endl;
 }
 
-void Naive::checkBestPath(vector<int>path, Graph & g){
-    path.push_back(path[0]);
-    float distance = g.getPathDistance(path);
+void Naive::checkBestPath(vector<int> path, Graph &g) {
+    vector<int> tempPath = path;
+    tempPath.push_back(path[0]);
+    float distance = g.getPathDistance(tempPath);
     if (distance < costOfBestPath) {
         costOfBestPath = distance;
-        bestPath = path;
+        bestPath = tempPath;
     }
 }
 
@@ -34,6 +41,6 @@ void Naive::printPath() {
             cout << bestPath[i] << "->";
         else
             cout << bestPath[i] << endl << "Path Size:" << costOfBestPath << endl;
-
     }
+    cout << "Nodes explored: " << nodesExplored << endl << endl;
 }

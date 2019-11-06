@@ -26,10 +26,12 @@ float Graph::getDist(int a, int b) {
     return dist;
 }
 
-float Graph::getPathDistance(vector<int> path) {
+float Graph::getPathDistance(vector<int> &path) {
     float distance=0.0;
     for (int i = 0; i < path.size()-1; i++) {
-        distance += getDist(path[i], path[i+1]);
+        if (path[i] != path[i + 1]) {
+            distance += getDist(path[i], path[i + 1]);
+        }
     }
     return distance;
 }
