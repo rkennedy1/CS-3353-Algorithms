@@ -35,3 +35,35 @@ float Graph::getPathDistance(vector<int> &path) {
     }
     return distance;
 }
+
+void Graph::createMatrix() {
+    matrix.resize(nodes.size());
+    for (int i = 0; i < nodes.size(); i++) {
+        matrix[i].resize(nodes.size());
+        for (int j = 0; j < nodes.size(); j++) {
+            matrix[i][j] = getDistMatrix(i, j);
+        }
+    }/*
+    vector<vector<int>> graph = {{0, 10, 15, 20}, {5, 0, 9, 10}, {6, 13, 0, 12}, {8, 8, 9, 0}};
+    matrix.resize(graph.size());
+    for (int i = 0; i < graph.size(); i++) {
+        matrix[i].resize(graph.size());
+        for (int j = 0; j < graph.size(); j++) {
+            matrix[i][j] = graph[i][j];
+        }
+    }*/
+}
+
+float Graph::getDistMatrix(int a, int b) {
+    if (a == b)
+        return 0;
+    float x1 = get<1>(positions[a]);
+    float x2 = get<1>(positions[b]);
+    float y1 = get<2>(positions[a]);
+    float y2 = get<2>(positions[b]);
+    float z1 = get<3>(positions[a]);
+    float z2 = get<3>(positions[b]);
+    float dist = ((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)) + ((z2 - z1) * (z2 - z1));
+    dist = sqrt(dist);
+    return dist;
+}

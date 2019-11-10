@@ -7,21 +7,21 @@
 
 #include "Graph.h"
 #include <iostream>
+#include <algorithm>
+#include "TSP.h"
 
 using namespace std;
 
-class DynamicProgramming {
+class DynamicProgramming : public TSP {
 private:
-    int nodesExplored;
-    vector<int> bestPath;
-    float costOfBestPath;
+    Graph g;
+    vector<vector<float>> memo;
+    vector<vector<int>> p;
+    int npow;
 
-    bool bestPathNotContains(int a);
+    void getPath(int start, int set);
 
-    void printPath();
-
-    float shortestPathRecur(int start, int end, vector<int> path, Graph &g);
-
+    float tspRecur(int start, int set);
 public:
     void shortestPath(Graph &g);
 };

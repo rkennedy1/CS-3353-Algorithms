@@ -6,27 +6,67 @@
 
 #IncludeRegexTransform: 
 
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Algo.h
+string
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.h
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+iostream
+-
+algorithm
+-
+TSP.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSP.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
 vector
 -
 tuple
 -
 math.h
 -
+iostream
+-
 
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Naive.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Naive.h
 vector
 -
 tuple
 -
 iostream
 -
+algorithm
+-
 Graph.h
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+TSP.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSP.h
 
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/main.cpp
-Naive.h
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Naive.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSP.h
 Graph.h
-/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+chrono
+-
+
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSPAlgo.h
+Algo.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Algo.h
+string
+-
+Naive.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Naive.h
+DynamicProgramming.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.h
+TSP.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSP.h
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/main.cpp
+Graph.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
+TSPAlgo.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSPAlgo.h
 

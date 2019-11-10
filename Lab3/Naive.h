@@ -10,19 +10,15 @@
 #include <iostream>
 #include <algorithm>
 #include "Graph.h"
+#include "TSP.h"
 
 using namespace std;
 
-class Naive {
+class Naive : public TSP {
 private:
-    int nodesExplored;
-    vector<int> bestPath;
-    float costOfBestPath;
-    void printPath();
+    void checkBestPath(vector<int> path, Graph &g);
 public:
     void shortestPath(Graph &g);
-
-    void checkBestPath(vector<int> path, Graph &g);
 };
 
 

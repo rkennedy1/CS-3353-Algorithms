@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3"
+CMAKE_SOURCE_DIR = "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug"
+CMAKE_BINARY_DIR = "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles" "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles" "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/RyanKennedy/Desktop/School/Third Year/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -204,32 +204,32 @@ Naive.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/Naive.cpp.s
 .PHONY : Naive.cpp.s
 
-SearchAlgo.o: SearchAlgo.cpp.o
+TSPAlgo.o: TSPAlgo.cpp.o
 
-.PHONY : SearchAlgo.o
+.PHONY : TSPAlgo.o
 
 # target to build an object file
-SearchAlgo.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/SearchAlgo.cpp.o
-.PHONY : SearchAlgo.cpp.o
+TSPAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/TSPAlgo.cpp.o
+.PHONY : TSPAlgo.cpp.o
 
-SearchAlgo.i: SearchAlgo.cpp.i
+TSPAlgo.i: TSPAlgo.cpp.i
 
-.PHONY : SearchAlgo.i
+.PHONY : TSPAlgo.i
 
 # target to preprocess a source file
-SearchAlgo.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/SearchAlgo.cpp.i
-.PHONY : SearchAlgo.cpp.i
+TSPAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/TSPAlgo.cpp.i
+.PHONY : TSPAlgo.cpp.i
 
-SearchAlgo.s: SearchAlgo.cpp.s
+TSPAlgo.s: TSPAlgo.cpp.s
 
-.PHONY : SearchAlgo.s
+.PHONY : TSPAlgo.s
 
 # target to generate assembly for a file
-SearchAlgo.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/SearchAlgo.cpp.s
-.PHONY : SearchAlgo.cpp.s
+TSPAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/TSPAlgo.cpp.s
+.PHONY : TSPAlgo.cpp.s
 
 main.o: main.cpp.o
 
@@ -276,9 +276,9 @@ help:
 	@echo "... Naive.o"
 	@echo "... Naive.i"
 	@echo "... Naive.s"
-	@echo "... SearchAlgo.o"
-	@echo "... SearchAlgo.i"
-	@echo "... SearchAlgo.s"
+	@echo "... TSPAlgo.o"
+	@echo "... TSPAlgo.i"
+	@echo "... TSPAlgo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

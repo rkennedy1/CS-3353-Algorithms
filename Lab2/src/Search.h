@@ -23,14 +23,10 @@ class Search : public Algorithm {
 public:
     Search();
     void Load(string fileName);
-
     void Execute();
-
     void Stats(string type);
     void Select(int sortAlgo);
-
     void Save(string filePath) {}
-
     void Display() {}
     void LoadManifest(string manifestFile);
     void Configure() {}
@@ -38,7 +34,6 @@ public:
     int numFiles;
     string activeSearchLabel;
     int numNodes;
-
     int generateRandomNode();
     enum SearchAlgo {
         DFSITER, DFSRECUR, BFSITER, BFSRECUR, DIJKSTRA, ASTAR, LAST
@@ -47,7 +42,6 @@ public:
     int start, end;
 private:
     string dirPath;
-
     void outputStats(string dataType);
     SearchAlgorithm *searchAlgorithm;
 };
