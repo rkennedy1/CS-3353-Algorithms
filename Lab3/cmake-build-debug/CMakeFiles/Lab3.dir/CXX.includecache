@@ -10,6 +10,10 @@
 string
 -
 
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.cpp
+DynamicProgramming.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.h
+
 /Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/DynamicProgramming.h
 Graph.h
 /Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/Graph.h
@@ -59,4 +63,8 @@ fstream
 -
 sstream
 -
+
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/main.cpp
+TSPAlgo.h
+/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab3/TSPAlgo.h
 

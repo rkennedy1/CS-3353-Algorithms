@@ -40,8 +40,8 @@ float DynamicProgramming::tspRecur(int start, int set) {
     int mask, masked;
     if (memo[start][set] != -1) //checks for repeated subproblem
         return memo[start][set];
-    permutationsDone++;
     for (int i = 1; i < g.nodes.size(); i++) {
+        permutationsDone++;
         mask = (npow - 1) - (1 << i);
         masked = set & mask;
         if (masked != set) {

@@ -7,7 +7,7 @@ int main() {
     A = &tsp;
     for (int i = 4; i <= 12; i++) {
         A->Load(to_string(i) + "Nodes.txt");
-        for (int i = tsp.dynamicProgramming; i < tsp.LAST; i++) {
+        for (int i = tsp.dynamicProgramming; i < tsp.bruteForce; i++) {
             A->Select(i);
             A->Execute();
         }
