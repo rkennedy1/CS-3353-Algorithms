@@ -5,8 +5,6 @@
 #ifndef LAB3_NAIVE_H
 #define LAB3_NAIVE_H
 
-#include <vector>
-#include "Graph.h"
 #include "TSP.h"
 
 using namespace std;

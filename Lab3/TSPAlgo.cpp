@@ -51,8 +51,9 @@ void TSPAlgo::Execute() {
 
 void TSPAlgo::Stats() {
     double time_taken = chrono::duration_cast<chrono::nanoseconds>(endTime - startTime).count();
-    time_taken *= 1e-9;
-    cout << "Time taken to find optimal path using " << activeAlgoLabel << ": " << time_taken << endl;
+    time_taken *= 1e-6;
+    cout << "Time taken to find optimal path using " << activeAlgoLabel << ": " << time_taken << " milliseconds"
+         << endl;
     cout << "Optimal path: ";
     for (int i = 0; i < tsp->finalPath.size(); i++) {
         if (i < tsp->finalPath.size() - 1)

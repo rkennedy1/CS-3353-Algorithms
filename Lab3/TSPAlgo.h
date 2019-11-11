@@ -6,7 +6,6 @@
 #define LAB3_TSPALGO_H
 
 #include "Algo.h"
-#include <string>
 #include "Naive.h"
 #include "DynamicProgramming.h"
 #include "TSP.h"
@@ -16,25 +15,20 @@
 
 class TSPAlgo : public Algo {
 public:
-     void Load(string fileName) ;
-     void Execute() ;
-     void Display() ;
+    void Load(string fileName);
 
+    void Execute();
     void Stats();
-
     void Select(int Algo);
-     void Save(string filePath);
-     void Configure();
-
     enum Algo {
         dynamicProgramming, bruteForce, LAST
     };
-    Graph g;
 private:
     chrono::steady_clock::time_point startTime;
     chrono::steady_clock::time_point endTime;
     string activeAlgoLabel;
     TSP *tsp;
+    Graph g;
 };
 
 

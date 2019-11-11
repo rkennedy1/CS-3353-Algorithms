@@ -6,6 +6,7 @@
 #define LAB3_TSP_H
 
 #include "Graph.h"
+#include <vector>
 
 using namespace std;
 

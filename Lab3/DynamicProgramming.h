@@ -5,7 +5,6 @@
 #ifndef LAB3_DYNAMICPROGRAMMING_H
 #define LAB3_DYNAMICPROGRAMMING_H
 
-#include "Graph.h"
 #include "TSP.h"
 
 using namespace std;
