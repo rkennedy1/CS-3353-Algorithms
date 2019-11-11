@@ -6,8 +6,6 @@
 #define LAB3_DYNAMICPROGRAMMING_H
 
 #include "Graph.h"
-#include <iostream>
-#include <algorithm>
 #include "TSP.h"
 
 using namespace std;
@@ -20,7 +18,6 @@ private:
     int npow;
 
     void getPath(int start, int set);
-
     float tspRecur(int start, int set);
 public:
     void shortestPath(Graph &g);

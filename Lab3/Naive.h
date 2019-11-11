@@ -6,9 +6,6 @@
 #define LAB3_NAIVE_H
 
 #include <vector>
-#include <tuple>
-#include <iostream>
-#include <algorithm>
 #include "Graph.h"
 #include "TSP.h"
 

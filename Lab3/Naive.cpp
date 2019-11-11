@@ -4,7 +4,6 @@
 
 #include "Naive.h"
 
-
 void Naive::shortestPath(Graph &g) {
     vector<int> nodes;
     for (int i = 0; i < g.nodes.size(); i++) {

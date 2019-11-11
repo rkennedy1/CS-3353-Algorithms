@@ -11,8 +11,10 @@
 #include "DynamicProgramming.h"
 #include "TSP.h"
 #include "Graph.h"
+#include <fstream>
+#include <sstream>
 
-class TSPAlgo : Algo {
+class TSPAlgo : public Algo {
 public:
      void Load(string fileName) ;
      void Execute() ;
@@ -25,7 +27,7 @@ public:
      void Configure();
 
     enum Algo {
-        bruteForce, dynamicProgramming, LAST
+        dynamicProgramming, bruteForce, LAST
     };
     Graph g;
 private:

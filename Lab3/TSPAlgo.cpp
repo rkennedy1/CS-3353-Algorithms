@@ -4,6 +4,31 @@
 
 #include "TSPAlgo.h"
 
+void TSPAlgo::Load(string fileName) {
+    g.nodes.clear();
+    g.positions.clear();
+    g.matrix.clear();
+    g.size = 0;
+    ifstream inputGraph;
+    inputGraph.open(fileName);
+    string inputLine;
+    vector<float> tempLine;
+    while (!(inputGraph.eof())) {
+        getline(inputGraph, inputLine);
+        stringstream inputStream(inputLine);
+        while (inputStream.good()) {
+            string substring;
+            getline(inputStream, substring, ',');
+            if (!substring.empty())
+                tempLine.push_back(stof(substring));
+        }
+        if (!tempLine.empty())
+            g.addNode(tempLine[0], tempLine[1], tempLine[2], tempLine[3]);
+        tempLine.clear();
+    }
+    g.createMatrix();
+}
+
 void TSPAlgo::Select(int Algo) {
     switch (Algo) {
         case bruteForce:
