@@ -36,9 +36,9 @@ void DynamicProgramming::getPath(int start, int set) {
 }
 
 float DynamicProgramming::tspRecur(int start, int set) {
-    float result = MAXFLOAT, temp;
+    float result = 999999999, temp;
     int mask, masked;
-    if (memo[start][set] != -1) //checks for repeated subproblem
+    if (memo[start][set] != -1)//checks for repeated subproblem
         return memo[start][set];
     for (int i = 1; i < g.nodes.size(); i++) {
         permutationsDone++;
