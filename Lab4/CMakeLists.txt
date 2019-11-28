@@ -16,4 +16,4 @@ add_executable(Lab4
         Naive.h
         TSP.h
         TSPAlgo.cpp
-        TSPAlgo.h tabu.cpp tabu.h)
+        TSPAlgo.h Tabu.cpp Tabu.h Solution.cpp Solution.h)

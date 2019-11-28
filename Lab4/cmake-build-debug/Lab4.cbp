@@ -103,6 +103,12 @@
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Naive.h">
 			<Option target="Lab4"/>
 		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Solution.cpp">
+			<Option target="Lab4"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Solution.h">
+			<Option target="Lab4"/>
+		</Unit>
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/TSP.h">
 			<Option target="Lab4"/>
 		</Unit>
@@ -112,13 +118,13 @@
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/TSPAlgo.h">
 			<Option target="Lab4"/>
 		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Tabu.cpp">
+			<Option target="Lab4"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Tabu.h">
+			<Option target="Lab4"/>
+		</Unit>
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/main.cpp">
-			<Option target="Lab4"/>
-		</Unit>
-		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/tabu.cpp">
-			<Option target="Lab4"/>
-		</Unit>
-		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/tabu.h">
 			<Option target="Lab4"/>
 		</Unit>
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/CMakeLists.txt">

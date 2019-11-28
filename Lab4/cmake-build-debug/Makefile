@@ -204,6 +204,33 @@ Naive.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Naive.cpp.s
 .PHONY : Naive.cpp.s
 
+Solution.o: Solution.cpp.o
+
+.PHONY : Solution.o
+
+# target to build an object file
+Solution.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.o
+.PHONY : Solution.cpp.o
+
+Solution.i: Solution.cpp.i
+
+.PHONY : Solution.i
+
+# target to preprocess a source file
+Solution.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.i
+.PHONY : Solution.cpp.i
+
+Solution.s: Solution.cpp.s
+
+.PHONY : Solution.s
+
+# target to generate assembly for a file
+Solution.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.s
+.PHONY : Solution.cpp.s
+
 TSPAlgo.o: TSPAlgo.cpp.o
 
 .PHONY : TSPAlgo.o
@@ -230,6 +257,33 @@ TSPAlgo.s: TSPAlgo.cpp.s
 TSPAlgo.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/TSPAlgo.cpp.s
 .PHONY : TSPAlgo.cpp.s
+
+Tabu.o: Tabu.cpp.o
+
+.PHONY : Tabu.o
+
+# target to build an object file
+Tabu.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Tabu.cpp.o
+.PHONY : Tabu.cpp.o
+
+Tabu.i: Tabu.cpp.i
+
+.PHONY : Tabu.i
+
+# target to preprocess a source file
+Tabu.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Tabu.cpp.i
+.PHONY : Tabu.cpp.i
+
+Tabu.s: Tabu.cpp.s
+
+.PHONY : Tabu.s
+
+# target to generate assembly for a file
+Tabu.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Tabu.cpp.s
+.PHONY : Tabu.cpp.s
 
 main.o: main.cpp.o
 
@@ -258,33 +312,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-tabu.o: tabu.cpp.o
-
-.PHONY : tabu.o
-
-# target to build an object file
-tabu.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/tabu.cpp.o
-.PHONY : tabu.cpp.o
-
-tabu.i: tabu.cpp.i
-
-.PHONY : tabu.i
-
-# target to preprocess a source file
-tabu.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/tabu.cpp.i
-.PHONY : tabu.cpp.i
-
-tabu.s: tabu.cpp.s
-
-.PHONY : tabu.s
-
-# target to generate assembly for a file
-tabu.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/tabu.cpp.s
-.PHONY : tabu.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -303,15 +330,18 @@ help:
 	@echo "... Naive.o"
 	@echo "... Naive.i"
 	@echo "... Naive.s"
+	@echo "... Solution.o"
+	@echo "... Solution.i"
+	@echo "... Solution.s"
 	@echo "... TSPAlgo.o"
 	@echo "... TSPAlgo.i"
 	@echo "... TSPAlgo.s"
+	@echo "... Tabu.o"
+	@echo "... Tabu.i"
+	@echo "... Tabu.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... tabu.o"
-	@echo "... tabu.i"
-	@echo "... tabu.s"
 .PHONY : help
 
 

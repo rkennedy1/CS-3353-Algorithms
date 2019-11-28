@@ -22,12 +22,10 @@ public:
     vector<vector<float>> matrix;
 
     void addNode(int, float,float,float);
-
     void createMatrix();
+
     float getDist(int,int);
-
     float getDistMatrix(int, int);
-
     float getPathDistance(vector<int> &path);
 
 };

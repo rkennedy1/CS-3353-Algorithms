@@ -8,6 +8,7 @@
 #include "Algo.h"
 #include "Naive.h"
 #include "DynamicProgramming.h"
+#include "Tabu.h"
 #include "TSP.h"
 #include "Graph.h"
 #include <fstream>
@@ -21,7 +22,7 @@ public:
     void Stats();
     void Select(int Algo);
     enum Algo {
-        dynamicProgramming, bruteForce, LAST
+        dynamicProgramming, bruteForce, tabu, LAST
     };
 private:
     chrono::steady_clock::time_point startTime;

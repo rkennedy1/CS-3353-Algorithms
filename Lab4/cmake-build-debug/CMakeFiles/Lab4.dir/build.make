@@ -122,18 +122,31 @@ CMakeFiles/Lab4.dir/TSPAlgo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab4.dir/TSPAlgo.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/TSPAlgo.cpp" -o CMakeFiles/Lab4.dir/TSPAlgo.cpp.s
 
-CMakeFiles/Lab4.dir/tabu.cpp.o: CMakeFiles/Lab4.dir/flags.make
-CMakeFiles/Lab4.dir/tabu.cpp.o: ../tabu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lab4.dir/tabu.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab4.dir/tabu.cpp.o -c "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/tabu.cpp"
+CMakeFiles/Lab4.dir/Tabu.cpp.o: CMakeFiles/Lab4.dir/flags.make
+CMakeFiles/Lab4.dir/Tabu.cpp.o: ../Tabu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lab4.dir/Tabu.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab4.dir/Tabu.cpp.o -c "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Tabu.cpp"
 
-CMakeFiles/Lab4.dir/tabu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab4.dir/tabu.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/tabu.cpp" > CMakeFiles/Lab4.dir/tabu.cpp.i
+CMakeFiles/Lab4.dir/Tabu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab4.dir/Tabu.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Tabu.cpp" > CMakeFiles/Lab4.dir/Tabu.cpp.i
 
-CMakeFiles/Lab4.dir/tabu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab4.dir/tabu.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/tabu.cpp" -o CMakeFiles/Lab4.dir/tabu.cpp.s
+CMakeFiles/Lab4.dir/Tabu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab4.dir/Tabu.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Tabu.cpp" -o CMakeFiles/Lab4.dir/Tabu.cpp.s
+
+CMakeFiles/Lab4.dir/Solution.cpp.o: CMakeFiles/Lab4.dir/flags.make
+CMakeFiles/Lab4.dir/Solution.cpp.o: ../Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lab4.dir/Solution.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab4.dir/Solution.cpp.o -c "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Solution.cpp"
+
+CMakeFiles/Lab4.dir/Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab4.dir/Solution.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Solution.cpp" > CMakeFiles/Lab4.dir/Solution.cpp.i
+
+CMakeFiles/Lab4.dir/Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab4.dir/Solution.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Solution.cpp" -o CMakeFiles/Lab4.dir/Solution.cpp.s
 
 # Object files for target Lab4
 Lab4_OBJECTS = \
@@ -142,7 +155,8 @@ Lab4_OBJECTS = \
 "CMakeFiles/Lab4.dir/main.cpp.o" \
 "CMakeFiles/Lab4.dir/Naive.cpp.o" \
 "CMakeFiles/Lab4.dir/TSPAlgo.cpp.o" \
-"CMakeFiles/Lab4.dir/tabu.cpp.o"
+"CMakeFiles/Lab4.dir/Tabu.cpp.o" \
+"CMakeFiles/Lab4.dir/Solution.cpp.o"
 
 # External object files for target Lab4
 Lab4_EXTERNAL_OBJECTS =
@@ -152,10 +166,11 @@ Lab4: CMakeFiles/Lab4.dir/Graph.cpp.o
 Lab4: CMakeFiles/Lab4.dir/main.cpp.o
 Lab4: CMakeFiles/Lab4.dir/Naive.cpp.o
 Lab4: CMakeFiles/Lab4.dir/TSPAlgo.cpp.o
-Lab4: CMakeFiles/Lab4.dir/tabu.cpp.o
+Lab4: CMakeFiles/Lab4.dir/Tabu.cpp.o
+Lab4: CMakeFiles/Lab4.dir/Solution.cpp.o
 Lab4: CMakeFiles/Lab4.dir/build.make
 Lab4: CMakeFiles/Lab4.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Lab4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Lab4"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab4.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

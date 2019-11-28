@@ -39,6 +39,10 @@ void TSPAlgo::Select(int Algo) {
             tsp = new DynamicProgramming;
             activeAlgoLabel = "dynamic programming";
             break;
+        case tabu:
+            tsp = new Tabu;
+            activeAlgoLabel = "Tabu";
+            break;
     }
 }
 
