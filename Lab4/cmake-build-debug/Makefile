@@ -231,33 +231,6 @@ Naive.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Naive.cpp.s
 .PHONY : Naive.cpp.s
 
-Solution.o: Solution.cpp.o
-
-.PHONY : Solution.o
-
-# target to build an object file
-Solution.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.o
-.PHONY : Solution.cpp.o
-
-Solution.i: Solution.cpp.i
-
-.PHONY : Solution.i
-
-# target to preprocess a source file
-Solution.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.i
-.PHONY : Solution.cpp.i
-
-Solution.s: Solution.cpp.s
-
-.PHONY : Solution.s
-
-# target to generate assembly for a file
-Solution.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/Solution.cpp.s
-.PHONY : Solution.cpp.s
-
 TSPAlgo.o: TSPAlgo.cpp.o
 
 .PHONY : TSPAlgo.o
@@ -360,9 +333,6 @@ help:
 	@echo "... Naive.o"
 	@echo "... Naive.i"
 	@echo "... Naive.s"
-	@echo "... Solution.o"
-	@echo "... Solution.i"
-	@echo "... Solution.s"
 	@echo "... TSPAlgo.o"
 	@echo "... TSPAlgo.i"
 	@echo "... TSPAlgo.s"

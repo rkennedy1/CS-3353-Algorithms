@@ -31,10 +31,10 @@ void TSPAlgo::Load(string fileName) {
 
 void TSPAlgo::Select(int Algo) {
     switch (Algo) {
-        case bruteForce:
+        /*case bruteForce:
             tsp = new Naive;
             activeAlgoLabel = "brute force";
-            break;
+            break;*/
         case dynamicProgramming:
             tsp = new DynamicProgramming;
             activeAlgoLabel = "dynamic programming";

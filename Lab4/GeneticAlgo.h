@@ -13,11 +13,11 @@ class GeneticAlgo : public TSP {
 private:
     int popSize = 5000;
     int numGenerations = 1000;
-    int mutRate = 0;
+    int mutRate = 20;
     vector<pair<float, vector<int>>> population;
     pair<int, int> parents;
     enum parentType {
-        RANDOM, ELITE, LAST
+        RANDOM, ELITE, ROULETTE
     };
 
     void introPop(Graph &);

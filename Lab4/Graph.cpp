@@ -43,15 +43,7 @@ void Graph::createMatrix() {
         for (int j = 0; j < nodes.size(); j++) {
             matrix[i][j] = getDistMatrix(i, j);
         }
-    }/*
-    vector<vector<int>> graph = {{0, 10, 15, 20}, {5, 0, 9, 10}, {6, 13, 0, 12}, {8, 8, 9, 0}};
-    matrix.resize(graph.size());
-    for (int i = 0; i < graph.size(); i++) {
-        matrix[i].resize(graph.size());
-        for (int j = 0; j < graph.size(); j++) {
-            matrix[i][j] = graph[i][j];
-        }
-    }*/
+    }
 }
 
 float Graph::getDistMatrix(int a, int b) {

@@ -25,8 +25,8 @@ public:
 
     void outputStats();
     enum Algo {
-        dynamicProgramming, bruteForce, tabu, genetic, LAST
-    };
+        dynamicProgramming, tabu, genetic, LAST
+    }; //bruteForce
 private:
     chrono::steady_clock::time_point startTime;
     chrono::steady_clock::time_point endTime;

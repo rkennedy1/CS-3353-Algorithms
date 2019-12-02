@@ -47,10 +47,12 @@ void Tabu::swapAllNeighbors(pair<float, vector<int>> &p, Graph &g) {
     pair<float, vector<int>> newSolution = p;
     for (int i = 1; i < g.size; i++) {
         for (int j = 1; j < g.size; j++) {
-            swap(i, j, g, newSolution);
-            permutationsDone++;
-            if (newSolution.first < p.first && !contains(newSolution))
-                p = newSolution;
+            if (i != j) {
+                permutationsDone++;
+                swap(i, j, g, newSolution);
+                if (newSolution.first < p.first && !contains(newSolution))
+                    p = newSolution;
+            }
         }
     }
 }

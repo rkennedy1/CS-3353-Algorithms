@@ -6,12 +6,11 @@
 #define LAB4_TABU_H
 
 #include "Graph.h"
-#include "Solution.h"
 #include "TSP.h"
 #include <vector>
 #include <tuple>
 #include <random>
-#include <stdlib.h>
+#include <cstdlib>
 
 using namespace std;
 

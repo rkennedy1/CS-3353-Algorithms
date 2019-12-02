@@ -7,7 +7,7 @@
 void GeneticAlgo::shortestPath(Graph &g) {
     introPop(g);
     for (int i = 0; i < numGenerations; i++) {
-        chooseParents(ELITE);
+        chooseParents(RANDOM);
         crossover(g);
     }
     int index = 0;
@@ -30,7 +30,6 @@ void GeneticAlgo::introPop(Graph &g) {
 }
 
 pair<float, vector<int>> GeneticAlgo::randomPair(Graph &g) {
-    permutationsDone++;
     pair<float, vector<int>> newPair;
     newPair.second.push_back(1);
     for (int i = 1; i < g.size; i++)
@@ -60,6 +59,24 @@ void GeneticAlgo::chooseParents(int type) {
         }
         parents.first = a;
         parents.second = b;
+    } else if (type == ROULETTE) {
+        vector<float> adjPopFitness;
+        float totalFitness = 0;
+        for (int i = 0; i < popSize; i++)
+            totalFitness += population[i].first;
+        for (int i = 0; i < popSize; i++)
+            adjPopFitness.push_back(population[i].first/totalFitness);
+        double rand1 = rand();
+        double rand2 = rand();
+        float fitness = 0;
+        for (int i = 0; i < adjPopFitness.size(); i++) {
+            fitness += adjPopFitness[i];
+            if (rand1 < fitness && parents.first == 0) {
+                parents.first = i;
+            } else if (rand2 < fitness && parents.second == 0) {
+                parents.second = i;
+            }
+        }
     }
 }
 
@@ -99,7 +116,6 @@ void GeneticAlgo::mutate(pair<float, vector<int>> &p, Graph &g) {
 }
 
 void GeneticAlgo::swap(int a, int b, Graph &g, pair<float, vector<int>> &p) {
-    permutationsDone++;
     float temp = p.second[a];
     p.second[a] = p.second[b];
     p.second[b] = temp;
