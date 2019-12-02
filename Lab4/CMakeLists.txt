@@ -16,4 +16,4 @@ add_executable(Lab4
         Naive.h
         TSP.h
         TSPAlgo.cpp
-        TSPAlgo.h Tabu.cpp Tabu.h Solution.cpp Solution.h)
+        TSPAlgo.h Tabu.cpp Tabu.h Solution.cpp Solution.h GeneticAlgo.cpp GeneticAlgo.h)

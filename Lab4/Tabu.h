@@ -10,8 +10,8 @@
 #include "TSP.h"
 #include <vector>
 #include <tuple>
-#include <chrono>
-
+#include <random>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -20,15 +20,17 @@ public:
     void shortestPath(Graph &);
 
 private:
-    vector<pair<float, vector<int>>> list;
-    int size = 10;
-    int iterNum = 1000;
+    vector<pair<float, vector<int>>> tabu;
+    int size = 20;
+    int iter = 800;
 
     bool contains(pair<float, vector<int>>);
 
-    pair<float, vector<int>> init(Graph &);
+    pair<float, vector<int>> randomPair(Graph &g);
 
-    pair<float, vector<int>> findNeighbor(pair<float, vector<int>>, Graph &);
+    void swapAllNeighbors(pair<float, vector<int>> &, Graph &);
+
+    void swapRandomNeighbors(pair<float, vector<int>> &, Graph &);
 
     void swap(int, int, Graph &, pair<float, vector<int>> &);
 };

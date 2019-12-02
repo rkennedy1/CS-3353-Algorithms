@@ -91,6 +91,12 @@
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/DynamicProgramming.h">
 			<Option target="Lab4"/>
 		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/GeneticAlgo.cpp">
+			<Option target="Lab4"/>
+		</Unit>
+		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/GeneticAlgo.h">
+			<Option target="Lab4"/>
+		</Unit>
 		<Unit filename="/Users/RyanKennedy/Desktop/School/Third Year/Fall Semester/CS-3353/CS-3353-Algorithms/Lab4/Graph.cpp">
 			<Option target="Lab4"/>
 		</Unit>

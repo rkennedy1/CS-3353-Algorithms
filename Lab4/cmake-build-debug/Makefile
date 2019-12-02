@@ -150,6 +150,33 @@ DynamicProgramming.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/DynamicProgramming.cpp.s
 .PHONY : DynamicProgramming.cpp.s
 
+GeneticAlgo.o: GeneticAlgo.cpp.o
+
+.PHONY : GeneticAlgo.o
+
+# target to build an object file
+GeneticAlgo.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/GeneticAlgo.cpp.o
+.PHONY : GeneticAlgo.cpp.o
+
+GeneticAlgo.i: GeneticAlgo.cpp.i
+
+.PHONY : GeneticAlgo.i
+
+# target to preprocess a source file
+GeneticAlgo.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/GeneticAlgo.cpp.i
+.PHONY : GeneticAlgo.cpp.i
+
+GeneticAlgo.s: GeneticAlgo.cpp.s
+
+.PHONY : GeneticAlgo.s
+
+# target to generate assembly for a file
+GeneticAlgo.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/GeneticAlgo.cpp.s
+.PHONY : GeneticAlgo.cpp.s
+
 Graph.o: Graph.cpp.o
 
 .PHONY : Graph.o
@@ -324,6 +351,9 @@ help:
 	@echo "... DynamicProgramming.o"
 	@echo "... DynamicProgramming.i"
 	@echo "... DynamicProgramming.s"
+	@echo "... GeneticAlgo.o"
+	@echo "... GeneticAlgo.i"
+	@echo "... GeneticAlgo.s"
 	@echo "... Graph.o"
 	@echo "... Graph.i"
 	@echo "... Graph.s"

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab4.dir/DynamicProgramming.cpp.o"
+  "CMakeFiles/Lab4.dir/GeneticAlgo.cpp.o"
   "CMakeFiles/Lab4.dir/Graph.cpp.o"
   "CMakeFiles/Lab4.dir/Naive.cpp.o"
   "CMakeFiles/Lab4.dir/Solution.cpp.o"

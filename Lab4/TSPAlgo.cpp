@@ -43,6 +43,10 @@ void TSPAlgo::Select(int Algo) {
             tsp = new Tabu;
             activeAlgoLabel = "Tabu";
             break;
+        case genetic:
+            tsp = new GeneticAlgo;
+            activeAlgoLabel = "Genetic Algorithm";
+            break;
     }
 }
 
@@ -66,4 +70,21 @@ void TSPAlgo::Stats() {
             cout << tsp->finalPath[i] << endl << "Path Size:" << tsp->pathDist << endl;
     }
     cout << "Permutations done: " << tsp->permutationsDone << endl << endl;
+    outputStats();
+}
+
+void TSPAlgo::outputStats() {
+    ofstream output;
+    output.open("./output/" + this->activeAlgoLabel + ".csv", fstream::app);
+    double time_taken = chrono::duration_cast<chrono::nanoseconds>(endTime - startTime).count();
+    time_taken *= 1e-6;
+    output << this->activeAlgoLabel << ',' << time_taken << ',';
+    for (int i = 0; i < tsp->finalPath.size(); i++) {
+        if (i < tsp->finalPath.size() - 1)
+            output << tsp->finalPath[i] << "-";
+        else
+            output << tsp->finalPath[i];
+    }
+    output << ',' << tsp->permutationsDone << ',' << tsp->pathDist << endl;
+    output.close();
 }
