@@ -12,7 +12,6 @@
 class GeneticAlgo : public TSP {
 private:
     int popSize = 1
-    00;
     int invalid = 0;
     int numGenerations = 1000;
     int mutRate = 70;
