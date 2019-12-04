@@ -23,11 +23,11 @@ int main() {
     int numFiles = LoadManifest("fileManifest.txt", fileManifest);
     for (int j = 0; j < numFiles-1; j++) {
         A->Load(fileManifest[j]);
-        for (int i = tsp.dynamicProgramming; i < tsp.LAST; i++) {
-            for (int j = 0; j < 10; j++) {
+        for (int i = tsp.tabu; i < tsp.LAST; i++) {
+            //for (int j = 0; j < 10; j++) {
                 A->Select(i);
                 A->Execute();
-            }
+            //}
         }
     }
     return 0;

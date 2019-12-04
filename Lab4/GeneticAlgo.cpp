@@ -7,7 +7,7 @@
 void GeneticAlgo::shortestPath(Graph &g) {
     introPop(g);
     for (int i = 0; i < numGenerations; i++) {
-        chooseParents(RANDOM);
+        chooseParents(ROULETTE);
         crossover(g);
     }
     int index = 0;
@@ -20,6 +20,7 @@ void GeneticAlgo::shortestPath(Graph &g) {
     }
     finalPath = population[index].second;
     pathDist = population[index].first;
+    cout << invalid << endl;
 }
 
 void GeneticAlgo::introPop(Graph &g) {
@@ -83,6 +84,37 @@ void GeneticAlgo::chooseParents(int type) {
 void GeneticAlgo::crossover(Graph &g) {
     vector<int> parentAPath = population[parents.first].second;
     vector<int> parentBPath = population[parents.second].second;
+    pair<float, vector<int>> offspringA;
+    srand(time(NULL));
+    int cutoff = rand() % (parentAPath.size() - 1);
+    for (int i = 0; i < parentAPath.size(); i++) {
+        if (i < cutoff) {
+            offspringA.second.push_back(parentAPath[i]);
+        } else {
+            if (!contains(offspringA.second, parentBPath[i])) {
+                offspringA.second.push_back(parentBPath[i]);
+            } else {
+                for (int j = 0; j < parentBPath.size(); j++) {
+                    if (!contains(offspringA.second, parentBPath[j])) {
+                        offspringA.second.push_back(parentBPath[j]);
+                    }
+                }
+            }
+        }
+    }
+    int mut = rand() % 100;
+    if (mut < mutRate) {
+        mutate(offspringA, g);
+    }
+    offspringA.second.push_back(1);
+    offspringA.first = g.getPathDistance(offspringA.second);
+    if (validOffspring(offspringA.second) && offspringA.second.size() == population[parents.second].second.size()) {
+        population[parents.first] = offspringA;
+    } else
+        invalid++;
+    /*
+    vector<int> parentAPath = population[parents.first].second;
+    vector<int> parentBPath = population[parents.second].second;
     pair<float, vector<int>> offspringA, offspringB;
     srand(time(NULL));
     int cutoff = rand() % (parentAPath.size() - 1);
@@ -91,8 +123,26 @@ void GeneticAlgo::crossover(Graph &g) {
             offspringA.second.push_back(parentAPath[i]);
             offspringB.second.push_back(parentBPath[i]);
         } else {
-            offspringA.second.push_back(parentBPath[i]);
-            offspringB.second.push_back(parentAPath[i]);
+            if (!contains(offspringA.second, parentAPath[i])) {
+                offspringA.second.push_back(parentAPath[i]);
+            } else if (!contains(offspringA.second, parentBPath[i])) {
+                offspringA.second.push_back(parentBPath[i]);
+            } else {
+                for (int j = 0; j < parentAPath.size(); j++) {
+                    if (!contains(offspringA.second, parentAPath[j]))
+                        offspringA.second.push_back(parentAPath[j]);
+                }
+            }
+            if (!contains(offspringB.second, parentBPath[i])) {
+                offspringB.second.push_back(parentBPath[i]);
+            } else if (!contains(offspringB.second, parentAPath[i])) {
+                offspringB.second.push_back(parentAPath[i]);
+            } else {
+                for (int j = 0; j < parentBPath.size(); j++) {
+                    if (!contains(offspringB.second, parentBPath[j]))
+                        offspringB.second.push_back(parentBPath[j]);
+                }
+            }
         }
     }
     int mut = rand() % 100;
@@ -106,6 +156,15 @@ void GeneticAlgo::crossover(Graph &g) {
     }
     offspringA.first = g.getPathDistance(offspringA.second);
     offspringB.first = g.getPathDistance(offspringB.second);
+    if (validOffspring(offspringA.second) && offspringB.second.size() == population[parents.second].second.size()) {
+        population[parents.first] = offspringA;
+    } else
+        invalid++;
+    if (validOffspring(offspringB.second) && offspringB.second.size() == population[parents.second].second.size()) {
+        population[parents.second] = offspringB;
+    } else
+        invalid++;
+        */
 }
 
 void GeneticAlgo::mutate(pair<float, vector<int>> &p, Graph &g) {
@@ -120,4 +179,21 @@ void GeneticAlgo::swap(int a, int b, Graph &g, pair<float, vector<int>> &p) {
     p.second[a] = p.second[b];
     p.second[b] = temp;
     p.first = g.getPathDistance(p.second);
+}
+
+bool GeneticAlgo::validOffspring(vector<int> path) {
+    for (int i = 1; i < path.size(); i++) {
+        for (int j = i + 1; j < path.size(); j++) {
+            if (path[i] == path[j])
+                return false;
+        }
+    }
+    return true;
+}
+
+bool GeneticAlgo::contains(vector<int> path, int a) {
+    for (int i = 0; i < path.size(); i++)
+        if (path[i] == a)
+            return true;
+    return false;
 }

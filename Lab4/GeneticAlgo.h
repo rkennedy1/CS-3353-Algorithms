@@ -11,9 +11,11 @@
 
 class GeneticAlgo : public TSP {
 private:
-    int popSize = 5000;
+    int popSize = 1
+    00;
+    int invalid = 0;
     int numGenerations = 1000;
-    int mutRate = 20;
+    int mutRate = 70;
     vector<pair<float, vector<int>>> population;
     pair<int, int> parents;
     enum parentType {
@@ -32,6 +34,9 @@ private:
 
     pair<float, vector<int>> randomPair(Graph &);
 
+    bool validOffspring(vector<int>);
+
+    bool contains(vector<int>, int);
 public:
     virtual void shortestPath(Graph &g);
 };
