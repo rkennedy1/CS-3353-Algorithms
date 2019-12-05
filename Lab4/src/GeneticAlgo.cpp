@@ -12,7 +12,7 @@ void GeneticAlgo::shortestPath(Graph &g) {
         crossover(g);
     }
     int index = 0;
-    float minDist = MAXFLOAT;
+    float minDist = 999999999;
     for (int i = 0; i < population.size(); i++) {
         if (population[i].first < minDist) {
             minDist = population[i].first;
@@ -49,7 +49,7 @@ void GeneticAlgo::chooseParents(int type) {
         parents.first = rand() % (popSize - 1);
         parents.second = rand() % (popSize - 1);
     } else if (type == ELITE) {
-        float bestDist = MAXFLOAT;
+        float bestDist = 999999999;
         int a = 0, b = 0;
         for (int i = 0; i < popSize; i++) {
             if (population[i].first < bestDist) {
